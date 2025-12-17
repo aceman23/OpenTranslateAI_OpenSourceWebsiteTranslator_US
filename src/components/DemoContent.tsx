@@ -787,6 +787,17 @@ export function DemoContent() {
             </p>
           </div>
           <div className="h-px w-full bg-white/10 mb-10 max-w-4xl"></div>
+          <div className="flex flex-wrap justify-center gap-6 mb-6">
+            <a href="/privacy-policy" className="text-gray-400 hover:text-orange-500 text-sm font-montserrat font-medium transition-colors">
+              隐私政策
+            </a>
+            <a href="/terms" className="text-gray-400 hover:text-orange-500 text-sm font-montserrat font-medium transition-colors">
+              服务条款
+            </a>
+            <a href="/cookie-policy" className="text-gray-400 hover:text-orange-500 text-sm font-montserrat font-medium transition-colors">
+              Cookie 政策
+            </a>
+          </div>
           <p className="text-gray-500 text-sm font-montserrat font-medium">
             创建和开发由 <span className="text-orange-500 font-semibold">Hybrid Ads.ai</span>
           </p>

@@ -3,6 +3,7 @@ import { TranslationWidget } from './components/TranslationWidget';
 import { TranslationDebug } from './components/TranslationDebug';
 import { DemoContent } from './components/DemoContent';
 import { DemoContentEnglish } from './components/DemoContentEnglish';
+import { CookieConsent } from './components/CookieConsent';
 
 function App() {
   const [localLang, setLocalLang] = useState<'zh' | 'en'>('zh');
@@ -22,6 +23,7 @@ function App() {
       />
       <TranslationDebug />
       {localLang === 'zh' ? <DemoContent /> : <DemoContentEnglish />}
+      <CookieConsent />
     </>
   );
 }

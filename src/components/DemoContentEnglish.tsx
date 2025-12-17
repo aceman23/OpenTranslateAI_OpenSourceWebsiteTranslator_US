@@ -787,6 +787,17 @@ export function DemoContentEnglish() {
             </p>
           </div>
           <div className="h-px w-full bg-white/10 mb-10 max-w-4xl"></div>
+          <div className="flex flex-wrap justify-center gap-6 mb-6">
+            <a href="/privacy-policy" className="text-gray-400 hover:text-orange-500 text-sm font-montserrat font-medium transition-colors">
+              Privacy Policy
+            </a>
+            <a href="/terms" className="text-gray-400 hover:text-orange-500 text-sm font-montserrat font-medium transition-colors">
+              Terms of Service
+            </a>
+            <a href="/cookie-policy" className="text-gray-400 hover:text-orange-500 text-sm font-montserrat font-medium transition-colors">
+              Cookie Policy
+            </a>
+          </div>
           <p className="text-gray-500 text-sm font-montserrat font-medium">
             Created and Developed by <span className="text-orange-500 font-semibold">Hybrid Ads.ai</span>
           </p>
