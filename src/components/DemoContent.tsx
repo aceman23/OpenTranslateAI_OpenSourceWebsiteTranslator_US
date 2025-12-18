@@ -14,8 +14,7 @@ export function DemoContent() {
       {/* Navbar */}
       <div className="fixed top-6 left-0 right-0 z-40 flex justify-center px-4 animate-fade-up">
         <nav className="glass-nav border border-gray-200 rounded-full pl-6 pr-2 py-2 flex items-center gap-8 shadow-sm hover:shadow-lg hover:shadow-rose-500/5 transition-all duration-300">
-          <a href="#" className="group flex items-center gap-3 text-sm text-gray-900 hover:text-rose-600 transition-colors">
-            <img src="/translation-widget-logo.svg" alt="OpenTranslateAI" className="w-8 h-8" />
+          <a href="#" className="group flex items-center gap-2 text-sm text-gray-900 hover:text-rose-600 transition-colors">
             <span className="text-2xl tracking-tight font-serif italic font-medium">OpenTranslateAI.com</span>
           </a>
 
