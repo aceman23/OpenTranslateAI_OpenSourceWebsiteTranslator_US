@@ -1,0 +1,32 @@
+<svg width="200" height="200" viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background Circle -->
+  <circle cx="100" cy="100" r="95" fill="url(#gradient1)" />
+
+  <!-- Gradient Definition -->
+  <defs>
+    <linearGradient id="gradient1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#FB923C;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#F43F5E;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+
+  <!-- Globe Icon -->
+  <circle cx="100" cy="100" r="45" stroke="white" stroke-width="4" fill="none" opacity="0.9"/>
+  <line x1="55" y1="100" x2="145" y2="100" stroke="white" stroke-width="4" opacity="0.9"/>
+  <ellipse cx="100" cy="100" rx="20" ry="45" stroke="white" stroke-width="4" fill="none" opacity="0.9"/>
+
+  <!-- Translation Symbol A-Z -->
+  <g transform="translate(70, 65)">
+    <text x="0" y="0" font-family="Arial, sans-serif" font-size="24" font-weight="bold" fill="white" opacity="0.95">A</text>
+  </g>
+
+  <!-- Chinese Character -->
+  <g transform="translate(105, 125)">
+    <text x="0" y="0" font-family="Arial, sans-serif" font-size="24" font-weight="bold" fill="white" opacity="0.95">文</text>
+  </g>
+
+  <!-- Connection Arrow -->
+  <g transform="translate(90, 85)">
+    <path d="M 0 0 L 20 10 L 0 20" stroke="white" stroke-width="3" fill="none" opacity="0.8"/>
+  </g>
+</svg>

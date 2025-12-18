@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { ArrowRight, Shield, Gauge, Zap, Eye, Users, FileText, Check, Github, Circle, Info } from 'lucide-react';
+import { ArrowRight, Shield, Gauge, Zap, Eye, Users, FileText, Check, Github, Circle, Info, Sparkles, Target, Gift, Crown, Globe, TrendingUp, Download } from 'lucide-react';
 import { OllamaIcon, OpenAIIcon, ClaudeIcon, GrokIcon, QwenIcon } from './AIModelIcons';
 
 export function DemoContent() {
@@ -796,6 +796,10 @@ export function DemoContent() {
             </a>
             <a href="/cookie-policy" className="text-gray-400 hover:text-orange-500 text-sm font-montserrat font-medium transition-colors">
               Cookie 政策
+            </a>
+            <a href="/translation-widget-logo.svg" download="translation-widget-logo.svg" className="text-gray-400 hover:text-orange-500 text-sm font-montserrat font-medium transition-colors flex items-center gap-1.5">
+              <Download className="w-4 h-4" />
+              下载标志
             </a>
           </div>
           <p className="text-gray-500 text-sm font-montserrat font-medium">
