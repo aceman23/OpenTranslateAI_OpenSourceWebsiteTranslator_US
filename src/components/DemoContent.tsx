@@ -756,7 +756,7 @@ export function DemoContent() {
             <p className="text-gray-400 text-base md:text-lg mb-10 max-w-2xl mx-auto font-montserrat font-medium">
               加入数百名已经使用此解决方案触达全球受众的开发者
             </p>
-            <AnimatedButton text="免费开始" href="#" className="!bg-white hover:!bg-gray-100" />
+            <AnimatedButton text="免费开始" href="#" />
           </div>
         </div>
       </main>
