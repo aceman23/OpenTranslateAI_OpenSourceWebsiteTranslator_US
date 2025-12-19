@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import { ArrowRight, Shield, Gauge, Zap, Eye, Users, FileText, Check, Github, Circle, Info, Sparkles, Target, Gift, Crown, Globe, TrendingUp, Download } from 'lucide-react';
 import { OllamaIcon, OpenAIIcon, ClaudeIcon, GrokIcon, QwenIcon } from './AIModelIcons';
+import { AnimatedButton } from './AnimatedButton';
 
 export function DemoContentEnglish() {
   const [openFaqIndex, setOpenFaqIndex] = useState<number | null>(null);
@@ -60,12 +61,7 @@ export function DemoContentEnglish() {
               </p>
 
               <div className="animate-fade-up delay-500 flex flex-wrap gap-4 items-center">
-                <a href="https://github.com/aceman23/open-website-translator-widget" target="_blank" rel="noopener noreferrer" className="bg-gray-900 text-white pl-8 pr-6 py-4 rounded-full text-base hover:bg-rose-600 hover:shadow-lg hover:shadow-rose-600/20 transition-all duration-300 flex items-center gap-3 font-montserrat font-medium group/btn">
-                  View on GitHub
-                  <div className="bg-white/20 rounded-full p-1 group-hover/btn:bg-white/30 transition-colors">
-                    <ArrowRight className="w-3 h-3 group-hover/btn:translate-x-0.5 transition-transform" />
-                  </div>
-                </a>
+                <AnimatedButton text="View on GitHub" href="https://github.com/aceman23/open-website-translator-widget" />
                 <a href="https://github.com/aceman23/open-website-translator-widget" target="_blank" rel="noopener noreferrer" className="text-gray-600 px-6 py-4 rounded-full text-base hover:text-gray-900 transition-all duration-300 font-montserrat font-medium flex items-center gap-2 group/link">
                   <Github className="w-4 h-4 text-gray-400 group-hover/link:text-gray-900 transition-colors" />
                   Contribute on GitHub
@@ -273,11 +269,7 @@ export function DemoContentEnglish() {
           </div>
 
           <div className="flex justify-center mt-12">
-            <a href="https://github.com/aceman23/open-website-translator-widget" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2.5 bg-[#1A2626] text-white px-8 py-4 rounded-xl font-montserrat font-semibold hover:bg-gray-800 transition-all shadow-lg hover:shadow-xl active:scale-[0.98]">
-              <Github className="w-5 h-5" />
-              View on GitHub
-              <ArrowRight className="w-5 h-5" />
-            </a>
+            <AnimatedButton text="View on GitHub" href="https://github.com/aceman23/open-website-translator-widget" />
           </div>
         </div>
 
@@ -338,12 +330,8 @@ export function DemoContentEnglish() {
                 </div>
 
                 <div className="mt-12 flex gap-4">
-                  <a href="#" className="bg-white text-gray-900 px-6 py-3 rounded-full font-semibold hover:bg-rose-50 transition-colors font-montserrat">
-                    Sign Up for Pro
-                  </a>
-                  <a href="#" className="border border-gray-700 text-white px-6 py-3 rounded-full font-semibold hover:bg-gray-800 transition-colors font-montserrat">
-                    Join Waitlist
-                  </a>
+                  <AnimatedButton text="Sign Up for Pro" href="#" />
+                  <AnimatedButton text="Join Waitlist" href="#" />
                 </div>
               </div>
 
@@ -768,9 +756,7 @@ export function DemoContentEnglish() {
             <p className="text-gray-400 text-base md:text-lg mb-10 max-w-2xl mx-auto font-montserrat font-medium">
               Join hundreds of developers already using this solution to reach global audiences
             </p>
-            <a href="#" className="inline-block bg-white text-[#121D1D] px-8 py-4 rounded-xl text-base font-montserrat font-semibold hover:bg-gray-100 transition-colors shadow-lg">
-              Start For Free
-            </a>
+            <AnimatedButton text="Start For Free" href="#" className="!bg-white hover:!bg-gray-100" />
           </div>
         </div>
       </main>
