@@ -61,7 +61,7 @@ export function DemoContent() {
               </p>
 
               <div className="animate-fade-up delay-500 flex flex-wrap gap-4 items-center">
-                <AnimatedButton text="在 GitHub 上查看" href="https://github.com/aceman23/open-website-translator-widget" />
+                <AnimatedButton text="在 GitHub 上查看" href="https://github.com/aceman23/open-website-translator-widget" icon={Github} />
                 <a href="https://github.com/aceman23/open-website-translator-widget" target="_blank" rel="noopener noreferrer" className="text-gray-600 px-6 py-4 rounded-full text-base hover:text-gray-900 transition-all duration-300 font-montserrat font-medium flex items-center gap-2 group/link">
                   <Github className="w-4 h-4 text-gray-400 group-hover/link:text-gray-900 transition-colors" />
                   在 GitHub 上贡献

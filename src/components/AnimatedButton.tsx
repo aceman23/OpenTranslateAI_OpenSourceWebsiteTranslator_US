@@ -1,11 +1,21 @@
+import { LucideIcon } from 'lucide-react';
+
 interface AnimatedButtonProps {
   text: string;
   onClick?: () => void;
   href?: string;
   className?: string;
+  icon?: LucideIcon;
 }
 
-export function AnimatedButton({ text, onClick, href, className = '' }: AnimatedButtonProps) {
+export function AnimatedButton({ text, onClick, href, className = '', icon: Icon }: AnimatedButtonProps) {
+  const content = (
+    <span className="flex items-center gap-2">
+      {Icon && <Icon className="w-5 h-5" />}
+      {text}
+    </span>
+  );
+
   if (href) {
     return (
       <a
@@ -14,7 +24,7 @@ export function AnimatedButton({ text, onClick, href, className = '' }: Animated
         aria-label={text}
         title={text}
       >
-        <span>{text}</span>
+        {content}
       </a>
     );
   }
@@ -27,7 +37,7 @@ export function AnimatedButton({ text, onClick, href, className = '' }: Animated
       aria-label={text}
       title={text}
     >
-      <span>{text}</span>
+      {content}
     </button>
   );
 }
