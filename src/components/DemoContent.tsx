@@ -502,6 +502,167 @@ export function DemoContent() {
           </div>
         </div>
 
+        {/* Multi-AI Model Powered Features */}
+        <div className="py-24">
+          <div className="text-center mb-16">
+            <div className="inline-flex items-center gap-2 rounded-full border border-rose-200 bg-rose-50 px-4 py-1.5 text-xs font-montserrat font-bold text-rose-600 mb-6">
+              <Crown className="w-3.5 h-3.5" />
+              专业版
+            </div>
+            <h2 className="text-4xl md:text-5xl mb-4 tracking-tight text-gray-900 font-montserrat font-semibold">
+              多 AI 模型驱动功能
+            </h2>
+            <p className="text-gray-600 text-lg font-montserrat max-w-3xl mx-auto">
+              通过 OpenRouter 访问 100+ AI 模型，解锁专业级翻译
+            </p>
+          </div>
+
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+            {/* Model Switching Card */}
+            <div className="bg-gradient-to-br from-gray-900 to-gray-800 rounded-[2rem] p-8 border border-gray-700 shadow-xl hover:shadow-2xl transition-all duration-300 group">
+              <div className="mb-6 w-14 h-14 rounded-2xl bg-gradient-to-br from-rose-500 to-orange-500 flex items-center justify-center text-white shadow-lg">
+                <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"></path><polyline points="3.27 6.96 12 12.01 20.73 6.96"></polyline><line x1="12" y1="22.08" x2="12" y2="12"></line></svg>
+              </div>
+              <h3 className="text-xl mb-4 text-white font-montserrat font-semibold">模型切换</h3>
+              <p className="text-gray-400 text-sm leading-relaxed font-montserrat mb-6">
+                从顶级 AI 引擎中选择
+              </p>
+
+              <div className="space-y-3 mb-4">
+                <div className="text-xs font-montserrat font-bold text-gray-500 uppercase tracking-wider">云端模型</div>
+                <div className="flex flex-wrap gap-2">
+                  <span className="px-3 py-1 bg-gray-800 text-gray-300 rounded-full text-xs font-montserrat">Grok</span>
+                  <span className="px-3 py-1 bg-gray-800 text-gray-300 rounded-full text-xs font-montserrat">Gemini</span>
+                  <span className="px-3 py-1 bg-gray-800 text-gray-300 rounded-full text-xs font-montserrat">GPT-4o</span>
+                  <span className="px-3 py-1 bg-gray-800 text-gray-300 rounded-full text-xs font-montserrat">Claude</span>
+                </div>
+              </div>
+
+              <div className="space-y-3">
+                <div className="text-xs font-montserrat font-bold text-gray-500 uppercase tracking-wider">开源模型</div>
+                <div className="flex flex-wrap gap-2">
+                  <span className="px-3 py-1 bg-gray-800 text-gray-300 rounded-full text-xs font-montserrat">DeepSeek</span>
+                  <span className="px-3 py-1 bg-gray-800 text-gray-300 rounded-full text-xs font-montserrat">Qwen</span>
+                  <span className="px-3 py-1 bg-gray-800 text-gray-300 rounded-full text-xs font-montserrat">Kimi</span>
+                  <span className="px-3 py-1 bg-gray-800 text-gray-300 rounded-full text-xs font-montserrat">Llama</span>
+                </div>
+              </div>
+
+              <button className="mt-6 w-full bg-gradient-to-r from-rose-500 to-orange-500 text-white px-4 py-2.5 rounded-xl text-sm font-montserrat font-semibold hover:shadow-lg hover:shadow-rose-500/30 transition-all">
+                查看所有模型
+              </button>
+            </div>
+
+            {/* Higher Quality Card */}
+            <div className="bg-gradient-to-br from-green-500 to-emerald-600 rounded-[2rem] p-8 border border-green-400/20 shadow-xl hover:shadow-2xl transition-all duration-300 group">
+              <div className="mb-6 w-14 h-14 rounded-2xl bg-white/20 backdrop-blur flex items-center justify-center text-white shadow-lg">
+                <Target className="w-7 h-7" />
+              </div>
+              <h3 className="text-xl mb-4 text-white font-montserrat font-semibold">更高质量</h3>
+              <p className="text-white/90 text-sm leading-relaxed font-montserrat mb-6">
+                上下文感知的准确翻译
+              </p>
+
+              <div className="space-y-3">
+                <div className="flex items-center gap-2">
+                  <Check className="w-4 h-4 text-white" />
+                  <span className="text-white/90 text-sm font-montserrat">上下文感知翻译</span>
+                </div>
+                <div className="flex items-center gap-2">
+                  <Check className="w-4 h-4 text-white" />
+                  <span className="text-white/90 text-sm font-montserrat">神经网络驱动</span>
+                </div>
+                <div className="flex items-center gap-2">
+                  <Check className="w-4 h-4 text-white" />
+                  <span className="text-white/90 text-sm font-montserrat">胜过基础 LibreTranslate</span>
+                </div>
+              </div>
+
+              <div className="mt-6 bg-white/10 backdrop-blur rounded-xl p-4">
+                <div className="flex items-center justify-between mb-2">
+                  <span className="text-white text-xs font-montserrat font-semibold">准确率</span>
+                  <span className="text-white text-lg font-montserrat font-bold">90-98%</span>
+                </div>
+                <div className="w-full bg-white/20 h-2 rounded-full overflow-hidden">
+                  <div className="bg-white h-full rounded-full" style={{ width: '95%' }}></div>
+                </div>
+              </div>
+            </div>
+
+            {/* No Setup Hassle Card */}
+            <div className="bg-gradient-to-br from-blue-500 to-cyan-600 rounded-[2rem] p-8 border border-blue-400/20 shadow-xl hover:shadow-2xl transition-all duration-300 group">
+              <div className="mb-6 w-14 h-14 rounded-2xl bg-white/20 backdrop-blur flex items-center justify-center text-white shadow-lg">
+                <Zap className="w-7 h-7" />
+              </div>
+              <h3 className="text-xl mb-4 text-white font-montserrat font-semibold">无需配置</h3>
+              <p className="text-white/90 text-sm leading-relaxed font-montserrat mb-6">
+                托管后端代理 - 一次添加您的网站
+              </p>
+
+              <div className="space-y-3">
+                <div className="flex items-center gap-2">
+                  <div className="w-5 h-5 rounded-full bg-white/20 flex items-center justify-center">
+                    <Check className="w-3 h-3 text-white" />
+                  </div>
+                  <span className="text-white/90 text-sm font-montserrat">无需暴露 API 密钥</span>
+                </div>
+                <div className="flex items-center gap-2">
+                  <div className="w-5 h-5 rounded-full bg-white/20 flex items-center justify-center">
+                    <Check className="w-3 h-3 text-white" />
+                  </div>
+                  <span className="text-white/90 text-sm font-montserrat">安全后端代理</span>
+                </div>
+                <div className="flex items-center gap-2">
+                  <div className="w-5 h-5 rounded-full bg-white/20 flex items-center justify-center">
+                    <Check className="w-3 h-3 text-white" />
+                  </div>
+                  <span className="text-white/90 text-sm font-montserrat">一次性设置</span>
+                </div>
+              </div>
+
+              <div className="mt-6 bg-white/10 backdrop-blur rounded-xl p-4 text-center">
+                <div className="text-white text-2xl font-montserrat font-bold mb-1">即插即用</div>
+                <div className="text-white/80 text-xs font-montserrat">只需添加一行代码</div>
+              </div>
+            </div>
+
+            {/* Extra Features Card */}
+            <div className="bg-gradient-to-br from-purple-500 to-pink-600 rounded-[2rem] p-8 border border-purple-400/20 shadow-xl hover:shadow-2xl transition-all duration-300 group">
+              <div className="mb-6 w-14 h-14 rounded-2xl bg-white/20 backdrop-blur flex items-center justify-center text-white shadow-lg">
+                <Gift className="w-7 h-7" />
+              </div>
+              <h3 className="text-xl mb-4 text-white font-montserrat font-semibold">额外功能</h3>
+              <p className="text-white/90 text-sm leading-relaxed font-montserrat mb-6">
+                高级功能的无限使用
+              </p>
+
+              <div className="space-y-3">
+                <div className="flex items-center gap-2">
+                  <Circle className="w-2 h-2 fill-white text-white" />
+                  <span className="text-white/90 text-sm font-montserrat">实时翻译</span>
+                </div>
+                <div className="flex items-center gap-2">
+                  <Circle className="w-2 h-2 fill-white text-white" />
+                  <span className="text-white/90 text-sm font-montserrat">自定义词汇表</span>
+                </div>
+                <div className="flex items-center gap-2">
+                  <Circle className="w-2 h-2 fill-white text-white" />
+                  <span className="text-white/90 text-sm font-montserrat">分析和 SEO</span>
+                </div>
+                <div className="flex items-center gap-2">
+                  <Circle className="w-2 h-2 fill-white text-white" />
+                  <span className="text-white/90 text-sm font-montserrat">优先支持</span>
+                </div>
+              </div>
+
+              <div className="mt-6 bg-white/10 backdrop-blur rounded-xl p-4 text-center">
+                <div className="text-white text-sm font-montserrat font-semibold mb-1">无限制</div>
+                <div className="text-white/80 text-xs font-montserrat">无速率限制</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
         {/* Perfect for Every Industry */}
         <div className="py-24">
           <h2 className="text-4xl md:text-5xl text-center mb-6 tracking-tight text-gray-900 font-montserrat font-semibold">
