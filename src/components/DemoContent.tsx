@@ -209,7 +209,7 @@ export function DemoContent() {
 
             <div className="bg-[#1A2626] rounded-2xl p-8 md:p-10 mt-6">
               <p className="text-white text-center text-base md:text-lg leading-relaxed font-montserrat">
-                适合注重隐私的用户、开发者或测试网站翻译的小型项目。为了获得更高的准确性、无缝的多模型 AI（例如 DeepSeek、Qwen、Grok）和零设置便利性，<a href="#pro" className="underline font-semibold hover:text-orange-400 transition-colors">升级到我们的 Pro 版本！</a>
+                适合注重隐私的用户、开发者或测试网站翻译的小型项目。为了获得更高的准确性、无缝的多模型 AI（例如 DeepSeek、Qwen、Grok）和零设置便利性，<a href="#pro" className="underline font-semibold hover:text-orange-400 transition-colors">升级到我们的 Pro 版本（即将推出）！</a>
               </p>
             </div>
           </div>
@@ -281,13 +281,13 @@ export function DemoContent() {
           <div className="relative z-10">
             <div className="inline-flex items-center gap-2 rounded-full border border-gray-700 bg-gray-800/50 px-4 py-1 text-xs font-montserrat font-semibold text-rose-400 mb-8">
               <span className="inline-flex h-1.5 w-1.5 rounded-full bg-rose-500 animate-pulse"></span>
-              专业版
+              专业版（即将推出）
             </div>
 
             <div className="grid lg:grid-cols-2 gap-16 items-start">
               <div>
                 <h2 className="text-4xl md:text-5xl text-white mb-6 tracking-tight font-medium">
-                  多 AI 模型<br /><span className="text-gray-400 italic">驱动翻译。</span>
+                  多 AI 模型<br /><span className="text-gray-400 italic">驱动翻译。</span><br /><span className="text-rose-400 text-2xl">（即将推出）</span>
                 </h2>
                 <p className="text-lg text-gray-400 mb-10 leading-relaxed font-montserrat">
                   通过<span className="text-white font-semibold">多模型 AI 切换</span>解锁高级翻译，以获得卓越的准确性。非常适合教育科技中复杂的中英文翻译。
@@ -330,7 +330,6 @@ export function DemoContent() {
                 </div>
 
                 <div className="mt-12 flex gap-4">
-                  <AnimatedButton text="注册专业版" href="#" />
                   <AnimatedButton text="加入候补名单" href="#" />
                 </div>
               </div>
@@ -423,7 +422,7 @@ export function DemoContent() {
           <div className="bg-gradient-to-br from-gray-900 to-gray-800 rounded-[2rem] p-10 md:p-14 shadow-xl border border-gray-700">
             <div className="text-center mb-16">
               <h2 className="text-4xl md:text-5xl mb-6 tracking-tight text-white font-montserrat font-semibold">
-                专业版：优缺点
+                专业版：优缺点<br /><span className="text-rose-400 text-xl">（即将推出）</span>
               </h2>
               <p className="text-gray-300 text-center text-base md:text-lg leading-relaxed font-montserrat max-w-3xl mx-auto">
                 我们的专业版通过安全的托管后端为您提供尖端的多模型 AI 支持（Grok、Gemini、GPT-4o、Claude、DeepSeek、Qwen、Kimi、MiniMax 等），无需 API 密钥或自行托管。
@@ -497,7 +496,7 @@ export function DemoContent() {
             </div>
 
             <p className="text-gray-300 text-lg leading-relaxed font-montserrat">
-              非常适合企业、教育科技平台以及任何需要专业级、无忧多语言网站的人。准备好轻松走向全球化了吗？立即升级到专业版！🚀
+              非常适合企业、教育科技平台以及任何需要专业级、无忧多语言网站的人。准备好轻松走向全球化了吗？立即升级到专业版（即将推出）！🚀
             </p>
           </div>
         </div>
@@ -507,7 +506,7 @@ export function DemoContent() {
           <div className="text-center mb-16">
             <div className="inline-flex items-center gap-2 rounded-full border border-rose-200 bg-rose-50 px-4 py-1.5 text-xs font-montserrat font-bold text-rose-600 mb-6">
               <Crown className="w-3.5 h-3.5" />
-              专业版
+              专业版（即将推出）
             </div>
             <h2 className="text-4xl md:text-5xl mb-4 tracking-tight text-gray-900 font-montserrat font-semibold">
               多 AI 模型驱动功能

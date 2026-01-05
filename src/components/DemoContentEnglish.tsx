@@ -209,7 +209,7 @@ export function DemoContentEnglish() {
 
             <div className="bg-[#1A2626] rounded-2xl p-8 md:p-10 mt-6">
               <p className="text-white text-center text-base md:text-lg leading-relaxed font-montserrat">
-                Ideal for privacy-focused users, developers, or small projects testing website translation. For higher accuracy, seamless multi-model AI (e.g., DeepSeek, Qwen, Grok), and zero-setup convenience, <a href="#pro" className="underline font-semibold hover:text-orange-400 transition-colors">upgrade to our Pro version!</a>
+                Ideal for privacy-focused users, developers, or small projects testing website translation. For higher accuracy, seamless multi-model AI (e.g., DeepSeek, Qwen, Grok), and zero-setup convenience, <a href="#pro" className="underline font-semibold hover:text-orange-400 transition-colors">upgrade to our Pro version (coming soon)!</a>
               </p>
             </div>
           </div>
@@ -281,13 +281,13 @@ export function DemoContentEnglish() {
           <div className="relative z-10">
             <div className="inline-flex items-center gap-2 rounded-full border border-gray-700 bg-gray-800/50 px-4 py-1 text-xs font-montserrat font-semibold text-rose-400 mb-8">
               <span className="inline-flex h-1.5 w-1.5 rounded-full bg-rose-500 animate-pulse"></span>
-              PRO VERSION
+              PRO VERSION (COMING SOON)
             </div>
 
             <div className="grid lg:grid-cols-2 gap-16 items-start">
               <div>
                 <h2 className="text-4xl md:text-5xl text-white mb-6 tracking-tight font-medium">
-                  Multi-AI Model<br /><span className="text-gray-400 italic">Powered Translation.</span>
+                  Multi-AI Model<br /><span className="text-gray-400 italic">Powered Translation.</span><br /><span className="text-rose-400 text-2xl">(Coming Soon)</span>
                 </h2>
                 <p className="text-lg text-gray-400 mb-10 leading-relaxed font-montserrat">
                   Unlock advanced translation with <span className="text-white font-semibold">multi-model AI switching</span> for superior accuracy. Ideal for complex languages like Chinese-to-English in EdTech.
@@ -330,7 +330,6 @@ export function DemoContentEnglish() {
                 </div>
 
                 <div className="mt-12 flex gap-4">
-                  <AnimatedButton text="Sign Up for Pro" href="#" />
                   <AnimatedButton text="Join Waitlist" href="#" />
                 </div>
               </div>
@@ -423,7 +422,7 @@ export function DemoContentEnglish() {
           <div className="bg-gradient-to-br from-gray-900 to-gray-800 rounded-[2rem] p-10 md:p-14 shadow-xl border border-gray-700">
             <div className="text-center mb-16">
               <h2 className="text-4xl md:text-5xl mb-6 tracking-tight text-white font-montserrat font-semibold">
-                Pro Version: Pros & Cons
+                Pro Version: Pros & Cons<br /><span className="text-rose-400 text-xl">(Coming Soon)</span>
               </h2>
               <p className="text-gray-300 text-center text-base md:text-lg leading-relaxed font-montserrat max-w-3xl mx-auto">
                 Our Pro version upgrades your translation experience with cutting-edge multi-AI model support (Grok, Gemini, GPT-4o, Claude, DeepSeek, Qwen, Kimi, MiniMax, and more) via a secure hosted backend—no API keys or self-hosting required.
@@ -497,7 +496,7 @@ export function DemoContentEnglish() {
             </div>
 
             <p className="text-gray-300 text-lg leading-relaxed font-montserrat">
-              Perfect for businesses, edtech platforms, and anyone needing professional-grade, hassle-free multilingual websites. Ready to go global effortlessly? Upgrade to Pro today! 🚀
+              Perfect for businesses, edtech platforms, and anyone needing professional-grade, hassle-free multilingual websites. Ready to go global effortlessly? Upgrade to Pro (coming soon)! 🚀
             </p>
           </div>
         </div>
@@ -507,7 +506,7 @@ export function DemoContentEnglish() {
           <div className="text-center mb-16">
             <div className="inline-flex items-center gap-2 rounded-full border border-rose-200 bg-rose-50 px-4 py-1.5 text-xs font-montserrat font-bold text-rose-600 mb-6">
               <Crown className="w-3.5 h-3.5" />
-              PRO VERSION
+              PRO VERSION (COMING SOON)
             </div>
             <h2 className="text-4xl md:text-5xl mb-4 tracking-tight text-gray-900 font-montserrat font-semibold">
               Multi-AI Model Powered Features
