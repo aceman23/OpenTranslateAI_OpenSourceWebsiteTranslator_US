@@ -557,10 +557,6 @@ export function DemoContentEnglish({ onOpenWaitlist }: DemoContentEnglishProps) 
                   <span className="px-3 py-1 bg-gray-800 text-gray-300 rounded-full text-xs font-montserrat">Llama</span>
                 </div>
               </div>
-
-              <button className="mt-6 w-full bg-gradient-to-r from-rose-500 to-orange-500 text-white px-4 py-2.5 rounded-xl text-sm font-montserrat font-semibold hover:shadow-lg hover:shadow-rose-500/30 transition-all">
-                View All Models
-              </button>
             </div>
 
             {/* Higher Quality Card */}
