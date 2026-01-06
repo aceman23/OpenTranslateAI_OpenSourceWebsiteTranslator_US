@@ -4,9 +4,11 @@ import { TranslationDebug } from './components/TranslationDebug';
 import { DemoContent } from './components/DemoContent';
 import { DemoContentEnglish } from './components/DemoContentEnglish';
 import { CookieConsent } from './components/CookieConsent';
+import { WaitlistPopup } from './components/WaitlistPopup';
 
 function App() {
   const [localLang, setLocalLang] = useState<'zh' | 'en'>('zh');
+  const [isWaitlistOpen, setIsWaitlistOpen] = useState(false);
 
   return (
     <>
@@ -22,8 +24,13 @@ function App() {
         localLanguages={['zh', 'en']}
       />
       <TranslationDebug />
-      {localLang === 'zh' ? <DemoContent /> : <DemoContentEnglish />}
+      {localLang === 'zh' ? (
+        <DemoContent onOpenWaitlist={() => setIsWaitlistOpen(true)} />
+      ) : (
+        <DemoContentEnglish onOpenWaitlist={() => setIsWaitlistOpen(true)} />
+      )}
       <CookieConsent />
+      <WaitlistPopup isOpen={isWaitlistOpen} onClose={() => setIsWaitlistOpen(false)} />
     </>
   );
 }

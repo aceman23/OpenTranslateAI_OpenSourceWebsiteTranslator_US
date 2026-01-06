@@ -3,7 +3,11 @@ import { ArrowRight, Shield, Gauge, Zap, Eye, Users, FileText, Check, Github, Ci
 import { OllamaIcon, OpenAIIcon, ClaudeIcon, GrokIcon, QwenIcon } from './AIModelIcons';
 import { AnimatedButton } from './AnimatedButton';
 
-export function DemoContentEnglish() {
+interface DemoContentEnglishProps {
+  onOpenWaitlist: () => void;
+}
+
+export function DemoContentEnglish({ onOpenWaitlist }: DemoContentEnglishProps) {
   const [openFaqIndex, setOpenFaqIndex] = useState<number | null>(null);
 
   const toggleFaq = (index: number) => {
@@ -62,6 +66,13 @@ export function DemoContentEnglish() {
 
               <div className="animate-fade-up delay-500 flex flex-wrap gap-4 items-center">
                 <AnimatedButton text="View on GitHub" href="https://github.com/aceman23/open-website-translator-widget" />
+                <button
+                  onClick={onOpenWaitlist}
+                  className="bg-gradient-to-r from-blue-500 to-blue-600 text-white px-6 py-4 rounded-full text-base hover:from-blue-600 hover:to-blue-700 hover:shadow-lg hover:shadow-blue-500/30 transition-all duration-300 font-montserrat font-medium flex items-center gap-2"
+                >
+                  <Sparkles className="w-4 h-4" />
+                  Join Waitlist
+                </button>
                 <a href="https://github.com/aceman23/open-website-translator-widget" target="_blank" rel="noopener noreferrer" className="text-gray-600 px-6 py-4 rounded-full text-base hover:text-gray-900 transition-all duration-300 font-montserrat font-medium flex items-center gap-2 group/link">
                   <Github className="w-4 h-4 text-gray-400 group-hover/link:text-gray-900 transition-colors" />
                   Contribute on GitHub
