@@ -7,13 +7,13 @@ import { CookieConsent } from './components/CookieConsent';
 import { WaitlistPopup } from './components/WaitlistPopup';
 
 function App() {
-  const [localLang, setLocalLang] = useState<'zh' | 'en'>('zh');
+  const [localLang, setLocalLang] = useState<'zh' | 'en'>('en');
   const [isWaitlistOpen, setIsWaitlistOpen] = useState(false);
 
   return (
     <>
       <TranslationWidget
-        defaultLang="zh"
+        defaultLang="en"
         targetElementId="translatable-content"
         position="top-right"
         onLanguageChange={(lang) => {
