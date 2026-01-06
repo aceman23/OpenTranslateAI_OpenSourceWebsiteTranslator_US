@@ -301,9 +301,9 @@ export function DemoContentSpanish({ onOpenWaitlist }: DemoContentSpanishProps) 
             <div className="grid lg:grid-cols-2 gap-16 items-start">
               <div>
                 <h2 className="text-4xl md:text-5xl text-white mb-6 tracking-tight font-medium">
-                  Traducción con<br /><span className="text-gray-400 italic">Múltiples Modelos IA.</span><br /><span className="text-rose-400 text-2xl">(Próximamente)</span>
+                  Traducción con<br /><span className="text-gray-300 italic">Múltiples Modelos IA.</span>
                 </h2>
-                <p className="text-lg text-gray-400 mb-10 leading-relaxed font-montserrat">
+                <p className="text-lg text-gray-300 mb-10 leading-relaxed font-montserrat">
                   Desbloquea traducción avanzada con <span className="text-white font-semibold">cambio de modelo IA múltiple</span> para una precisión superior. Ideal para idiomas complejos como chino a inglés en EdTech.
                 </p>
 
@@ -314,7 +314,7 @@ export function DemoContentSpanish({ onOpenWaitlist }: DemoContentSpanishProps) 
                     </div>
                     <div>
                       <h4 className="text-white text-lg font-semibold font-montserrat">Cambio de Modelo</h4>
-                      <p className="text-gray-500 text-sm mt-1 font-montserrat">
+                      <p className="text-gray-400 text-sm mt-1 font-montserrat">
                         Elige los mejores motores sobre la marcha: Grok, Gemini, GPT-4o, Claude, o modelos optimizados para chino como DeepSeek y Qwen.
                       </p>
                     </div>
@@ -325,7 +325,7 @@ export function DemoContentSpanish({ onOpenWaitlist }: DemoContentSpanishProps) 
                     </div>
                     <div>
                       <h4 className="text-white text-lg font-semibold font-montserrat">Proxy Alojado (Sin Configuración)</h4>
-                      <p className="text-gray-500 text-sm mt-1 font-montserrat">
+                      <p className="text-gray-400 text-sm mt-1 font-montserrat">
                         Agrega tu sitio una vez. Manejamos las claves API de forma segura. Sin exposición en el lado del cliente.
                       </p>
                     </div>
@@ -336,7 +336,7 @@ export function DemoContentSpanish({ onOpenWaitlist }: DemoContentSpanishProps) 
                     </div>
                     <div>
                       <h4 className="text-white text-lg font-semibold font-montserrat">Uso Ilimitado</h4>
-                      <p className="text-gray-500 text-sm mt-1 font-montserrat">
+                      <p className="text-gray-400 text-sm mt-1 font-montserrat">
                         Sin límites de velocidad. Inferencia ultra rápida a través de la infraestructura Groq.
                       </p>
                     </div>
@@ -354,7 +354,7 @@ export function DemoContentSpanish({ onOpenWaitlist }: DemoContentSpanishProps) 
                   <div className="w-3 h-3 rounded-full bg-yellow-500"></div>
                   <div className="w-3 h-3 rounded-full bg-green-500"></div>
                 </div>
-                <p className="text-gray-500 mb-2">// config.js</p>
+                <p className="text-gray-400 mb-2">// config.js</p>
                 <p><span className="text-purple-400">const</span> translator = <span className="text-blue-400">new</span> OpenTranslate({'{'}</p>
                 <p className="pl-4">apiKey: <span className="text-green-400">"hidden_proxy_token"</span>,</p>
                 <p className="pl-4">models: [</p>

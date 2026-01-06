@@ -301,9 +301,9 @@ export function DemoContent({ onOpenWaitlist }: DemoContentProps) {
             <div className="grid lg:grid-cols-2 gap-16 items-start">
               <div>
                 <h2 className="text-4xl md:text-5xl text-white mb-6 tracking-tight font-medium">
-                  多 AI 模型<br /><span className="text-gray-400 italic">驱动翻译。</span><br /><span className="text-rose-400 text-2xl">（即将推出）</span>
+                  多 AI 模型<br /><span className="text-gray-300 italic">驱动翻译。</span>
                 </h2>
-                <p className="text-lg text-gray-400 mb-10 leading-relaxed font-montserrat">
+                <p className="text-lg text-gray-300 mb-10 leading-relaxed font-montserrat">
                   通过<span className="text-white font-semibold">多模型 AI 切换</span>解锁高级翻译，以获得卓越的准确性。非常适合教育科技中复杂的中英文翻译。
                 </p>
 
@@ -314,7 +314,7 @@ export function DemoContent({ onOpenWaitlist }: DemoContentProps) {
                     </div>
                     <div>
                       <h4 className="text-white text-lg font-semibold font-montserrat">模型切换</h4>
-                      <p className="text-gray-500 text-sm mt-1 font-montserrat">
+                      <p className="text-gray-400 text-sm mt-1 font-montserrat">
                         即时选择顶级引擎：Grok、Gemini、GPT-4o、Claude 或针对中文优化的模型，如 DeepSeek 和 Qwen。
                       </p>
                     </div>
@@ -325,7 +325,7 @@ export function DemoContent({ onOpenWaitlist }: DemoContentProps) {
                     </div>
                     <div>
                       <h4 className="text-white text-lg font-semibold font-montserrat">托管代理（无需设置）</h4>
-                      <p className="text-gray-500 text-sm mt-1 font-montserrat">
+                      <p className="text-gray-400 text-sm mt-1 font-montserrat">
                         添加您的网站一次。我们安全地处理 API 密钥。客户端不会暴露。
                       </p>
                     </div>
@@ -336,7 +336,7 @@ export function DemoContent({ onOpenWaitlist }: DemoContentProps) {
                     </div>
                     <div>
                       <h4 className="text-white text-lg font-semibold font-montserrat">无限使用</h4>
-                      <p className="text-gray-500 text-sm mt-1 font-montserrat">
+                      <p className="text-gray-400 text-sm mt-1 font-montserrat">
                         无速率限制。通过 Groq 基础设施实现超快推理。
                       </p>
                     </div>
@@ -354,7 +354,7 @@ export function DemoContent({ onOpenWaitlist }: DemoContentProps) {
                   <div className="w-3 h-3 rounded-full bg-yellow-500"></div>
                   <div className="w-3 h-3 rounded-full bg-green-500"></div>
                 </div>
-                <p className="text-gray-500 mb-2">// config.js</p>
+                <p className="text-gray-400 mb-2">// config.js</p>
                 <p><span className="text-purple-400">const</span> translator = <span className="text-blue-400">new</span> OpenTranslate({'{'}</p>
                 <p className="pl-4">apiKey: <span className="text-green-400">"hidden_proxy_token"</span>,</p>
                 <p className="pl-4">models: [</p>
@@ -443,7 +443,7 @@ export function DemoContent({ onOpenWaitlist }: DemoContentProps) {
           <div className="bg-gradient-to-br from-gray-900 to-gray-800 rounded-[2rem] p-10 md:p-14 shadow-xl border border-gray-700">
             <div className="text-center mb-16">
               <h2 className="text-4xl md:text-5xl mb-6 tracking-tight text-white font-montserrat font-semibold">
-                专业版：优缺点<br /><span className="text-rose-400 text-xl">（即将推出）</span>
+                专业版：优缺点
               </h2>
               <p className="text-gray-300 text-center text-base md:text-lg leading-relaxed font-montserrat max-w-3xl mx-auto">
                 我们的专业版通过安全的托管后端为您提供尖端的多模型 AI 支持（Grok、Gemini、GPT-4o、Claude、DeepSeek、Qwen、Kimi、MiniMax 等），无需 API 密钥或自行托管。

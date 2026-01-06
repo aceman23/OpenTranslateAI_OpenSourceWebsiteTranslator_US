@@ -303,9 +303,9 @@ export function DemoContentEnglish({ onOpenWaitlist }: DemoContentEnglishProps) 
             <div className="grid lg:grid-cols-2 gap-16 items-start">
               <div>
                 <h2 className="text-4xl md:text-5xl text-white mb-6 tracking-tight font-medium">
-                  Multi-AI Model<br /><span className="text-gray-400 italic">Powered Translation.</span><br /><span className="text-rose-400 text-2xl">(Coming Soon)</span>
+                  Multi-AI Model<br /><span className="text-gray-300 italic">Powered Translation.</span>
                 </h2>
-                <p className="text-lg text-gray-400 mb-10 leading-relaxed font-montserrat">
+                <p className="text-lg text-gray-300 mb-10 leading-relaxed font-montserrat">
                   Unlock advanced translation with <span className="text-white font-semibold">multi-model AI switching</span> for superior accuracy. Ideal for complex languages like Chinese-to-English in EdTech.
                 </p>
 
@@ -316,7 +316,7 @@ export function DemoContentEnglish({ onOpenWaitlist }: DemoContentEnglishProps) 
                     </div>
                     <div>
                       <h4 className="text-white text-lg font-semibold font-montserrat">Model Switching</h4>
-                      <p className="text-gray-500 text-sm mt-1 font-montserrat">
+                      <p className="text-gray-400 text-sm mt-1 font-montserrat">
                         Choose top engines on-the-fly: Grok, Gemini, GPT-4o, Claude, or Chinese-optimized models like DeepSeek & Qwen.
                       </p>
                     </div>
@@ -327,7 +327,7 @@ export function DemoContentEnglish({ onOpenWaitlist }: DemoContentEnglishProps) 
                     </div>
                     <div>
                       <h4 className="text-white text-lg font-semibold font-montserrat">Hosted Proxy (No Setup)</h4>
-                      <p className="text-gray-500 text-sm mt-1 font-montserrat">
+                      <p className="text-gray-400 text-sm mt-1 font-montserrat">
                         Add your site once. We handle the API keys securely. No exposure on the client-side.
                       </p>
                     </div>
@@ -338,7 +338,7 @@ export function DemoContentEnglish({ onOpenWaitlist }: DemoContentEnglishProps) 
                     </div>
                     <div>
                       <h4 className="text-white text-lg font-semibold font-montserrat">Unlimited Usage</h4>
-                      <p className="text-gray-500 text-sm mt-1 font-montserrat">
+                      <p className="text-gray-400 text-sm mt-1 font-montserrat">
                         No rate limits. Blazing fast inference via Groq infrastructure.
                       </p>
                     </div>
@@ -356,7 +356,7 @@ export function DemoContentEnglish({ onOpenWaitlist }: DemoContentEnglishProps) 
                   <div className="w-3 h-3 rounded-full bg-yellow-500"></div>
                   <div className="w-3 h-3 rounded-full bg-green-500"></div>
                 </div>
-                <p className="text-gray-500 mb-2">// config.js</p>
+                <p className="text-gray-400 mb-2">// config.js</p>
                 <p><span className="text-purple-400">const</span> translator = <span className="text-blue-400">new</span> OpenTranslate({'{'}</p>
                 <p className="pl-4">apiKey: <span className="text-green-400">"hidden_proxy_token"</span>,</p>
                 <p className="pl-4">models: [</p>
@@ -395,7 +395,7 @@ export function DemoContentEnglish({ onOpenWaitlist }: DemoContentEnglishProps) 
           <div className="bg-gradient-to-br from-gray-900 to-gray-800 rounded-[2rem] p-10 md:p-14 shadow-xl border border-gray-700">
             <div className="text-center mb-16">
               <h2 className="text-4xl md:text-5xl mb-6 tracking-tight text-white font-montserrat font-semibold">
-                Pro Version: Pros & Cons<br /><span className="text-rose-400 text-xl">(Coming Soon)</span>
+                Pro Version: Pros & Cons
               </h2>
               <p className="text-gray-300 text-center text-base md:text-lg leading-relaxed font-montserrat max-w-3xl mx-auto">
                 Our Pro version upgrades your translation experience with cutting-edge multi-AI model support (Grok, Gemini, GPT-4o, Claude, DeepSeek, Qwen, Kimi, MiniMax, and more) via a secure hosted backend—no API keys or self-hosting required.
