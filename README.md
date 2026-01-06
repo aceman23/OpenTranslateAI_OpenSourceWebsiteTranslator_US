@@ -9,8 +9,10 @@ A production-ready, SEO-optimized translation widget for React applications. Tra
 ### Core Translation Features
 - **Smart DOM Translation**: Preserves HTML structure, styles, and interactive elements
 - **Multi-Language Support**: 10+ languages including Chinese, English, Spanish, French, German, Japanese, Korean, Arabic, Hindi, and Portuguese
+- **Local Language Components**: Pre-translated Chinese, English, and Spanish versions for instant switching without API calls
 - **Smart Caching System**: Instant language switching with zero latency once cached
 - **Batch Processing**: Optimized translation with progress tracking
+- **Rate Limit Protection**: Local languages avoid API rate limits entirely
 - **Privacy-Focused**: Self-hosted option using LibreTranslate for complete data privacy
 
 ### Production-Ready Features
@@ -85,28 +87,40 @@ Add `data-no-translate` attribute to elements that should not be translated:
 
 ### Local Language Support
 
-For better performance, provide pre-translated content for specific languages:
+For better performance and to avoid API rate limits, provide pre-translated content for specific languages:
 
 ```tsx
 function App() {
-  const [localLang, setLocalLang] = useState<'zh' | 'en'>('zh');
+  const [localLang, setLocalLang] = useState<'zh' | 'en' | 'es'>('en');
 
   return (
     <>
       <TranslationWidget
-        defaultLang="zh"
+        defaultLang="en"
         onLanguageChange={(lang) => {
-          if (lang === 'zh' || lang === 'en') {
+          if (lang === 'zh' || lang === 'en' || lang === 'es') {
             setLocalLang(lang);
           }
         }}
-        localLanguages={['zh', 'en']}
+        localLanguages={['zh', 'en', 'es']}
       />
-      {localLang === 'zh' ? <ChineseContent /> : <EnglishContent />}
+      {localLang === 'zh' ? (
+        <ChineseContent />
+      ) : localLang === 'es' ? (
+        <SpanishContent />
+      ) : (
+        <EnglishContent />
+      )}
     </>
   );
 }
 ```
+
+**Benefits of Local Languages:**
+- Instant language switching with zero latency
+- No API calls or rate limiting issues
+- Better SEO with pre-rendered content
+- Improved user experience
 
 ### Custom Translation API
 
@@ -136,8 +150,9 @@ Configure the widget to use your own translation service:
 - **TranslationWidget** (`src/components/TranslationWidget.tsx`): Main UI widget
 - **CookieConsent** (`src/components/CookieConsent.tsx`): GDPR-compliant cookie banner
 - **NotFound** (`src/components/NotFound.tsx`): Custom 404 error page
-- **DemoContent** (`src/components/DemoContent.tsx`): Chinese demo page
-- **DemoContentEnglish** (`src/components/DemoContentEnglish.tsx`): English demo page
+- **DemoContent** (`src/components/DemoContent.tsx`): Chinese demo page (local language)
+- **DemoContentEnglish** (`src/components/DemoContentEnglish.tsx`): English demo page (local language)
+- **DemoContentSpanish** (`src/components/DemoContentSpanish.tsx`): Spanish demo page (local language)
 
 ## SEO Features
 
@@ -174,18 +189,20 @@ Configure the widget to use your own translation service:
 
 ## Supported Languages
 
-| Language | Code | Native Name |
-|----------|------|-------------|
-| Chinese | zh | 中文 |
-| English | en | English |
-| Spanish | es | Español |
-| French | fr | Français |
-| German | de | Deutsch |
-| Japanese | ja | 日本語 |
-| Korean | ko | 한국어 |
-| Arabic | ar | العربية |
-| Hindi | hi | हिन्दी |
-| Portuguese | pt | Português |
+| Language | Code | Native Name | Local Component |
+|----------|------|-------------|-----------------|
+| Chinese | zh | 中文 | ✅ Pre-translated |
+| English | en | English | ✅ Pre-translated |
+| Spanish | es | Español | ✅ Pre-translated |
+| French | fr | Français | Via API |
+| German | de | Deutsch | Via API |
+| Japanese | ja | 日本語 | Via API |
+| Korean | ko | 한국어 | Via API |
+| Arabic | ar | العربية | Via API |
+| Hindi | hi | हिन्दी | Via API |
+| Portuguese | pt | Português | Via API |
+
+**Note:** Languages with pre-translated local components provide instant switching without API calls, avoiding rate limits and ensuring the best user experience.
 
 ## Performance
 
@@ -263,6 +280,23 @@ The included demo site showcases a complete, production-ready landing page:
 - Edge (latest)
 - Mobile browsers (iOS Safari, Chrome Mobile)
 
+## Troubleshooting
+
+### Rate Limit Errors
+
+If you encounter "Slowdown: 10 per 1 minute" errors:
+
+1. **Use Local Languages**: For Chinese, English, and Spanish, the app uses pre-translated components that don't make API calls
+2. **Self-Host LibreTranslate**: Run your own instance for unlimited translations
+3. **Enable Caching**: Once content is cached, switching back won't trigger API calls
+4. **Custom API**: Configure your own translation service endpoint
+
+### Performance Issues
+
+1. Target specific elements with `targetElementId` instead of translating the entire page
+2. Use `data-no-translate` to skip elements that don't need translation
+3. Leverage local language support for frequently accessed languages
+
 ## Development
 
 ### Project Structure
@@ -272,8 +306,9 @@ src/
 ├── components/
 │   ├── AIModelIcons.tsx       # AI model icons
 │   ├── CookieConsent.tsx      # GDPR cookie banner
-│   ├── DemoContent.tsx        # Chinese demo page
-│   ├── DemoContentEnglish.tsx # English demo page
+│   ├── DemoContent.tsx        # Chinese demo page (local)
+│   ├── DemoContentEnglish.tsx # English demo page (local)
+│   ├── DemoContentSpanish.tsx # Spanish demo page (local)
 │   ├── NotFound.tsx           # 404 error page
 │   ├── TranslationDebug.tsx   # Debug component
 │   └── TranslationWidget.tsx  # Main widget
