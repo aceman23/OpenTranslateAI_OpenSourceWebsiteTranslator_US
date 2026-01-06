@@ -50,9 +50,9 @@ export function WaitlistPopup({ isOpen, onClose }: WaitlistPopupProps) {
 
   return (
     <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/50 backdrop-blur-sm">
-      <div className="relative bg-white rounded-2xl shadow-2xl w-full max-w-md overflow-hidden">
+      <div className="relative bg-white rounded-[2rem] shadow-2xl w-full max-w-md overflow-hidden border border-gray-100">
         {/* Header */}
-        <div className="relative bg-gradient-to-br from-blue-500 to-blue-600 px-8 py-10 text-white">
+        <div className="relative bg-gradient-to-br from-rose-500 to-orange-500 px-8 py-10 text-white">
           <button
             onClick={onClose}
             className="absolute top-4 right-4 text-white/80 hover:text-white transition-colors"
@@ -60,12 +60,12 @@ export function WaitlistPopup({ isOpen, onClose }: WaitlistPopupProps) {
             <X className="w-5 h-5" />
           </button>
           <div className="flex items-center gap-3 mb-2">
-            <div className="w-12 h-12 bg-white/20 backdrop-blur-sm rounded-xl flex items-center justify-center">
-              <span className="text-2xl">🚀</span>
+            <div className="w-12 h-12 bg-white/20 backdrop-blur-sm rounded-xl flex items-center justify-center overflow-hidden">
+              <img src="/appicon.png" alt="OpenTranslateAI" className="w-10 h-10" />
             </div>
-            <h2 className="text-2xl font-bold">Join the Waitlist</h2>
+            <h2 className="text-2xl font-montserrat font-semibold">Join the Waitlist</h2>
           </div>
-          <p className="text-blue-100 text-sm">
+          <p className="text-white/90 text-sm font-montserrat">
             Be the first to know when we launch and get exclusive early access
           </p>
         </div>
@@ -77,15 +77,15 @@ export function WaitlistPopup({ isOpen, onClose }: WaitlistPopupProps) {
               <div className="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4">
                 <Check className="w-8 h-8 text-green-600" />
               </div>
-              <h3 className="text-xl font-bold text-gray-900 mb-2">You're on the list!</h3>
-              <p className="text-gray-600 text-sm">We'll be in touch soon</p>
+              <h3 className="text-xl font-montserrat font-semibold text-gray-900 mb-2">You're on the list!</h3>
+              <p className="text-gray-600 text-sm font-montserrat">We'll be in touch soon</p>
             </div>
           ) : (
             <>
               <div className="space-y-5">
                 {/* Name Field */}
                 <div>
-                  <label htmlFor="name" className="block text-sm font-semibold text-gray-700 mb-2">
+                  <label htmlFor="name" className="block text-sm font-montserrat font-semibold text-gray-700 mb-2">
                     Name
                   </label>
                   <div className="relative">
@@ -96,7 +96,7 @@ export function WaitlistPopup({ isOpen, onClose }: WaitlistPopupProps) {
                       value={name}
                       onChange={(e) => setName(e.target.value)}
                       required
-                      className="w-full pl-11 pr-4 py-3 bg-gray-50 border border-gray-200 rounded-xl focus:outline-none focus:ring-2 focus:ring-blue-500 focus:bg-white transition-all"
+                      className="w-full pl-11 pr-4 py-3 bg-gray-50 border border-gray-200 rounded-xl focus:outline-none focus:ring-2 focus:ring-rose-500 focus:bg-white transition-all font-montserrat"
                       placeholder="John Doe"
                     />
                   </div>
@@ -104,7 +104,7 @@ export function WaitlistPopup({ isOpen, onClose }: WaitlistPopupProps) {
 
                 {/* Email Field */}
                 <div>
-                  <label htmlFor="email" className="block text-sm font-semibold text-gray-700 mb-2">
+                  <label htmlFor="email" className="block text-sm font-montserrat font-semibold text-gray-700 mb-2">
                     Email
                   </label>
                   <div className="relative">
@@ -115,7 +115,7 @@ export function WaitlistPopup({ isOpen, onClose }: WaitlistPopupProps) {
                       value={email}
                       onChange={(e) => setEmail(e.target.value)}
                       required
-                      className="w-full pl-11 pr-4 py-3 bg-gray-50 border border-gray-200 rounded-xl focus:outline-none focus:ring-2 focus:ring-blue-500 focus:bg-white transition-all"
+                      className="w-full pl-11 pr-4 py-3 bg-gray-50 border border-gray-200 rounded-xl focus:outline-none focus:ring-2 focus:ring-rose-500 focus:bg-white transition-all font-montserrat"
                       placeholder="john@example.com"
                     />
                   </div>
@@ -124,8 +124,8 @@ export function WaitlistPopup({ isOpen, onClose }: WaitlistPopupProps) {
 
               {/* Error Message */}
               {error && (
-                <div className="mt-4 p-3 bg-red-50 border border-red-200 rounded-lg">
-                  <p className="text-sm text-red-800">{error}</p>
+                <div className="mt-4 p-3 bg-red-50 border border-red-200 rounded-xl">
+                  <p className="text-sm text-red-800 font-montserrat">{error}</p>
                 </div>
               )}
 
@@ -133,7 +133,7 @@ export function WaitlistPopup({ isOpen, onClose }: WaitlistPopupProps) {
               <button
                 type="submit"
                 disabled={isSubmitting}
-                className="w-full mt-6 bg-gradient-to-r from-blue-500 to-blue-600 hover:from-blue-600 hover:to-blue-700 text-white font-semibold py-3.5 rounded-xl shadow-lg hover:shadow-xl transition-all duration-200 disabled:opacity-50 disabled:cursor-not-allowed flex items-center justify-center gap-2"
+                className="w-full mt-6 bg-gradient-to-r from-rose-500 to-orange-500 hover:from-rose-600 hover:to-orange-600 text-white font-montserrat font-semibold py-3.5 rounded-xl shadow-lg hover:shadow-xl hover:shadow-rose-500/30 transition-all duration-200 disabled:opacity-50 disabled:cursor-not-allowed flex items-center justify-center gap-2"
               >
                 {isSubmitting ? (
                   <>
@@ -145,7 +145,7 @@ export function WaitlistPopup({ isOpen, onClose }: WaitlistPopupProps) {
                 )}
               </button>
 
-              <p className="text-xs text-gray-500 text-center mt-4">
+              <p className="text-xs text-gray-500 text-center mt-4 font-montserrat">
                 We respect your privacy. No spam, ever.
               </p>
             </>
