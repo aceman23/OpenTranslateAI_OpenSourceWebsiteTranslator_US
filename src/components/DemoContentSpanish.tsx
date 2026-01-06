@@ -285,15 +285,18 @@ export function DemoContentSpanish({ onOpenWaitlist }: DemoContentSpanishProps) 
         </div>
 
         {/* Pro Section */}
-        <div id="pro" className="bg-gray-900 rounded-[3rem] p-10 md:p-16 lg:p-20 relative overflow-hidden shadow-2xl">
-          <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-rose-500/10 rounded-full blur-[120px] pointer-events-none"></div>
-          <div className="absolute bottom-0 left-0 w-[400px] h-[400px] bg-blue-500/10 rounded-full blur-[100px] pointer-events-none"></div>
-
-          <div className="relative z-10">
-            <div className="inline-flex items-center gap-2 rounded-full border border-gray-700 bg-gray-800/50 px-4 py-1 text-xs font-montserrat font-semibold text-rose-400 mb-8">
-              <span className="inline-flex h-1.5 w-1.5 rounded-full bg-rose-500 animate-pulse"></span>
+        <div id="pro" className="py-24">
+          <div className="text-center mb-12">
+            <div className="inline-flex items-center gap-2 rounded-full border border-rose-200 bg-rose-50 px-4 py-1.5 text-xs font-montserrat font-bold text-rose-600">
+              <Crown className="w-3.5 h-3.5" />
               VERSIÓN PRO (PRÓXIMAMENTE)
             </div>
+          </div>
+          <div className="bg-gray-900 rounded-[3rem] p-10 md:p-16 lg:p-20 relative overflow-hidden shadow-2xl">
+            <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-rose-500/10 rounded-full blur-[120px] pointer-events-none"></div>
+            <div className="absolute bottom-0 left-0 w-[400px] h-[400px] bg-blue-500/10 rounded-full blur-[100px] pointer-events-none"></div>
+
+            <div className="relative z-10">
 
             <div className="grid lg:grid-cols-2 gap-16 items-start">
               <div>
@@ -374,6 +377,7 @@ export function DemoContentSpanish({ onOpenWaitlist }: DemoContentSpanishProps) 
                   </div>
                 </div>
               </div>
+            </div>
             </div>
           </div>
         </div>
