@@ -7,12 +7,19 @@ A production-ready, SEO-optimized AI-powered translation widget for modern web a
 ## Why Choose This Over Google Translate Widget?
 
 ✅ **100% Free & Open Source** - No API costs, no hidden fees
+
 ✅ **Complete Privacy** - Self-hosted option, no data sent to third parties
+
 ✅ **Full Customization** - Modify code to fit your exact needs
+
 ✅ **No Branding** - Your website, your way (unlike Google Translate widget)
+
 ✅ **AI-Powered** - Support for multiple AI models (DeepSeek, GPT-4o, Claude, Qwen)
+
 ✅ **Better SEO** - Pre-translated content for search engines
+
 ✅ **GDPR Compliant** - Built-in cookie consent and privacy controls
+
 
 ## Features
 
