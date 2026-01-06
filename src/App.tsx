@@ -3,11 +3,12 @@ import { TranslationWidget } from './components/TranslationWidget';
 import { TranslationDebug } from './components/TranslationDebug';
 import { DemoContent } from './components/DemoContent';
 import { DemoContentEnglish } from './components/DemoContentEnglish';
+import { DemoContentSpanish } from './components/DemoContentSpanish';
 import { CookieConsent } from './components/CookieConsent';
 import { WaitlistPopup } from './components/WaitlistPopup';
 
 function App() {
-  const [localLang, setLocalLang] = useState<'zh' | 'en'>('en');
+  const [localLang, setLocalLang] = useState<'zh' | 'en' | 'es'>('en');
   const [isWaitlistOpen, setIsWaitlistOpen] = useState(false);
 
   return (
@@ -17,15 +18,17 @@ function App() {
         targetElementId="translatable-content"
         position="top-right"
         onLanguageChange={(lang) => {
-          if (lang === 'zh' || lang === 'en') {
+          if (lang === 'zh' || lang === 'en' || lang === 'es') {
             setLocalLang(lang);
           }
         }}
-        localLanguages={['zh', 'en']}
+        localLanguages={['zh', 'en', 'es']}
       />
       <TranslationDebug />
       {localLang === 'zh' ? (
         <DemoContent onOpenWaitlist={() => setIsWaitlistOpen(true)} />
+      ) : localLang === 'es' ? (
+        <DemoContentSpanish onOpenWaitlist={() => setIsWaitlistOpen(true)} />
       ) : (
         <DemoContentEnglish onOpenWaitlist={() => setIsWaitlistOpen(true)} />
       )}
