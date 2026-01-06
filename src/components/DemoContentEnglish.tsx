@@ -378,56 +378,6 @@ export function DemoContentEnglish({ onOpenWaitlist }: DemoContentEnglishProps) 
           </div>
         </div>
 
-        {/* Models Marquee */}
-        <div className="w-full py-12 mt-8 overflow-hidden marquee-mask relative group bg-transparent">
-          <div className="flex w-[200%] animate-infinite-scroll hover:[animation-play-state:paused]">
-            <div className="flex items-center justify-around w-1/2 gap-16 px-8">
-              <div className="flex items-center gap-3 transition-all duration-300 hover:scale-110">
-                <OllamaIcon size={32} />
-                <span className="text-lg font-montserrat font-semibold text-gray-700">Ollama</span>
-              </div>
-              <div className="flex items-center gap-3 transition-all duration-300 hover:scale-110">
-                <OpenAIIcon size={32} />
-                <span className="text-lg font-montserrat font-semibold text-gray-700">GPT-4o</span>
-              </div>
-              <div className="flex items-center gap-3 transition-all duration-300 hover:scale-110">
-                <ClaudeIcon size={32} />
-                <span className="text-lg font-montserrat font-semibold text-gray-700">Claude 3.5</span>
-              </div>
-              <div className="flex items-center gap-3 transition-all duration-300 hover:scale-110">
-                <GrokIcon size={32} />
-                <span className="text-lg font-montserrat font-semibold text-gray-700">Grok</span>
-              </div>
-              <div className="flex items-center gap-3 transition-all duration-300 hover:scale-110">
-                <QwenIcon size={32} />
-                <span className="text-lg font-montserrat font-semibold text-gray-700">Qwen</span>
-              </div>
-            </div>
-            <div className="flex items-center justify-around w-1/2 gap-16 px-8">
-              <div className="flex items-center gap-3 transition-all duration-300 hover:scale-110">
-                <OllamaIcon size={32} />
-                <span className="text-lg font-montserrat font-semibold text-gray-700">Ollama</span>
-              </div>
-              <div className="flex items-center gap-3 transition-all duration-300 hover:scale-110">
-                <OpenAIIcon size={32} />
-                <span className="text-lg font-montserrat font-semibold text-gray-700">GPT-4o</span>
-              </div>
-              <div className="flex items-center gap-3 transition-all duration-300 hover:scale-110">
-                <ClaudeIcon size={32} />
-                <span className="text-lg font-montserrat font-semibold text-gray-700">Claude 3.5</span>
-              </div>
-              <div className="flex items-center gap-3 transition-all duration-300 hover:scale-110">
-                <GrokIcon size={32} />
-                <span className="text-lg font-montserrat font-semibold text-gray-700">Grok</span>
-              </div>
-              <div className="flex items-center gap-3 transition-all duration-300 hover:scale-110">
-                <QwenIcon size={32} />
-                <span className="text-lg font-montserrat font-semibold text-gray-700">Qwen</span>
-              </div>
-            </div>
-          </div>
-        </div>
-
         {/* Pro Version: Pros & Cons Section */}
         <div className="py-24">
           <div className="bg-gradient-to-br from-gray-900 to-gray-800 rounded-[2rem] p-10 md:p-14 shadow-xl border border-gray-700">
@@ -509,6 +459,56 @@ export function DemoContentEnglish({ onOpenWaitlist }: DemoContentEnglishProps) 
             <p className="text-gray-300 text-lg leading-relaxed font-montserrat">
               Perfect for businesses, edtech platforms, and anyone needing professional-grade, hassle-free multilingual websites. Ready to go global effortlessly? Upgrade to Pro (coming soon)! 🚀
             </p>
+          </div>
+        </div>
+
+        {/* Models Marquee */}
+        <div className="w-full py-12 mt-8 overflow-hidden marquee-mask relative group bg-transparent">
+          <div className="flex w-[200%] animate-infinite-scroll hover:[animation-play-state:paused]">
+            <div className="flex items-center justify-around w-1/2 gap-16 px-8">
+              <div className="flex items-center gap-3 transition-all duration-300 hover:scale-110">
+                <OllamaIcon size={32} />
+                <span className="text-lg font-montserrat font-semibold text-gray-700">Ollama</span>
+              </div>
+              <div className="flex items-center gap-3 transition-all duration-300 hover:scale-110">
+                <OpenAIIcon size={32} />
+                <span className="text-lg font-montserrat font-semibold text-gray-700">GPT-4o</span>
+              </div>
+              <div className="flex items-center gap-3 transition-all duration-300 hover:scale-110">
+                <ClaudeIcon size={32} />
+                <span className="text-lg font-montserrat font-semibold text-gray-700">Claude 3.5</span>
+              </div>
+              <div className="flex items-center gap-3 transition-all duration-300 hover:scale-110">
+                <GrokIcon size={32} />
+                <span className="text-lg font-montserrat font-semibold text-gray-700">Grok</span>
+              </div>
+              <div className="flex items-center gap-3 transition-all duration-300 hover:scale-110">
+                <QwenIcon size={32} />
+                <span className="text-lg font-montserrat font-semibold text-gray-700">Qwen</span>
+              </div>
+            </div>
+            <div className="flex items-center justify-around w-1/2 gap-16 px-8">
+              <div className="flex items-center gap-3 transition-all duration-300 hover:scale-110">
+                <OllamaIcon size={32} />
+                <span className="text-lg font-montserrat font-semibold text-gray-700">Ollama</span>
+              </div>
+              <div className="flex items-center gap-3 transition-all duration-300 hover:scale-110">
+                <OpenAIIcon size={32} />
+                <span className="text-lg font-montserrat font-semibold text-gray-700">GPT-4o</span>
+              </div>
+              <div className="flex items-center gap-3 transition-all duration-300 hover:scale-110">
+                <ClaudeIcon size={32} />
+                <span className="text-lg font-montserrat font-semibold text-gray-700">Claude 3.5</span>
+              </div>
+              <div className="flex items-center gap-3 transition-all duration-300 hover:scale-110">
+                <GrokIcon size={32} />
+                <span className="text-lg font-montserrat font-semibold text-gray-700">Grok</span>
+              </div>
+              <div className="flex items-center gap-3 transition-all duration-300 hover:scale-110">
+                <QwenIcon size={32} />
+                <span className="text-lg font-montserrat font-semibold text-gray-700">Qwen</span>
+              </div>
+            </div>
           </div>
         </div>
 
