@@ -73,10 +73,6 @@ export function DemoContentEnglish({ onOpenWaitlist }: DemoContentEnglishProps) 
                   <Sparkles className="w-4 h-4" />
                   Join Waitlist
                 </button>
-                <a href="https://github.com/aceman23/open-website-translator-widget" target="_blank" rel="noopener noreferrer" className="text-gray-600 px-6 py-4 rounded-full text-base hover:text-gray-900 transition-all duration-300 font-montserrat font-medium flex items-center gap-2 group/link">
-                  <Github className="w-4 h-4 text-gray-400 group-hover/link:text-gray-900 transition-colors" />
-                  Contribute on GitHub
-                </a>
               </div>
             </div>
 
@@ -146,9 +142,15 @@ export function DemoContentEnglish({ onOpenWaitlist }: DemoContentEnglishProps) 
           <h2 className="text-4xl md:text-5xl text-center mb-6 tracking-tight text-gray-900 font-montserrat font-semibold">
             Free Open-Source Version: Pros & Cons
           </h2>
-          <p className="text-gray-600 text-center text-base md:text-lg mb-16 leading-relaxed font-montserrat max-w-3xl mx-auto">
+          <p className="text-gray-600 text-center text-base md:text-lg mb-8 leading-relaxed font-montserrat max-w-3xl mx-auto">
             Our free version uses open-source tools like LibreTranslate for client-side or self-hosted translation, keeping everything private and customizable.
           </p>
+          <div className="flex justify-center mb-16">
+            <a href="https://github.com/aceman23/open-website-translator-widget" target="_blank" rel="noopener noreferrer" className="text-gray-600 px-6 py-4 rounded-full text-base hover:text-gray-900 transition-all duration-300 font-montserrat font-medium flex items-center gap-2 group/link">
+              <Github className="w-4 h-4 text-gray-400 group-hover/link:text-gray-900 transition-colors" />
+              Contribute on GitHub
+            </a>
+          </div>
           <div className="bg-white rounded-[2rem] p-12 md:p-16 shadow-lg border border-gray-200">
             <div className="grid md:grid-cols-2 gap-12 md:gap-16 mb-8">
               <div>
