@@ -2,7 +2,7 @@
 
 A production-ready, SEO-optimized translation widget for React applications. Translate your website content into multiple languages with a beautiful, accessible component that's ready for production use.
 
-🔗 **[View on GitHub](https://github.com/aceman23/open-website-translator-widget)**
+🔗 **[View on GitHub](https://github.com/aceman23/OpenTranslateAI_OpenSourceWebsiteTranslator_US)**
 
 ## Features
 
@@ -370,8 +370,8 @@ Built with:
 ## Support
 
 For issues, questions, or contributions, please visit:
-- [GitHub Repository](https://github.com/aceman23/open-website-translator-widget)
-- [Issue Tracker](https://github.com/aceman23/open-website-translator-widget/issues)
+- [GitHub Repository](https://github.com/aceman23/OpenTranslateAI_OpenSourceWebsiteTranslator_US)
+- [Issue Tracker](https://github.com/aceman23/OpenTranslateAI_OpenSourceWebsiteTranslator_US/issues)
 
 ---
 

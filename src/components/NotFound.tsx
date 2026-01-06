@@ -50,7 +50,7 @@ export function NotFound() {
                 Features
               </a>
               <span className="text-gray-400">|</span>
-              <a href="https://github.com/aceman23/open-website-translator-widget" target="_blank" rel="noopener noreferrer" className="text-rose-600 hover:text-rose-700 font-medium">
+              <a href="https://github.com/aceman23/OpenTranslateAI_OpenSourceWebsiteTranslator_US" target="_blank" rel="noopener noreferrer" className="text-rose-600 hover:text-rose-700 font-medium">
                 GitHub
               </a>
             </div>

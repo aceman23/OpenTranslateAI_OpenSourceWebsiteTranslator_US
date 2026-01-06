@@ -65,7 +65,7 @@ export function DemoContentSpanish({ onOpenWaitlist }: DemoContentSpanishProps) 
               </p>
 
               <div className="animate-fade-up delay-500 flex flex-wrap gap-4 items-center">
-                <AnimatedButton text="Ver en GitHub" href="https://github.com/aceman23/open-website-translator-widget" />
+                <AnimatedButton text="Ver en GitHub" href="https://github.com/aceman23/OpenTranslateAI_OpenSourceWebsiteTranslator_US" />
                 <button
                   onClick={onOpenWaitlist}
                   className="bg-gradient-to-r from-blue-500 to-blue-600 text-white px-6 py-4 rounded-full text-base hover:from-blue-600 hover:to-blue-700 hover:shadow-lg hover:shadow-blue-500/30 transition-all duration-300 font-montserrat font-medium flex items-center gap-2"
@@ -73,7 +73,7 @@ export function DemoContentSpanish({ onOpenWaitlist }: DemoContentSpanishProps) 
                   <Sparkles className="w-4 h-4" />
                   Unirse a Lista de Espera
                 </button>
-                <a href="https://github.com/aceman23/open-website-translator-widget" target="_blank" rel="noopener noreferrer" className="text-gray-600 px-6 py-4 rounded-full text-base hover:text-gray-900 transition-all duration-300 font-montserrat font-medium flex items-center gap-2 group/link">
+                <a href="https://github.com/aceman23/OpenTranslateAI_OpenSourceWebsiteTranslator_US" target="_blank" rel="noopener noreferrer" className="text-gray-600 px-6 py-4 rounded-full text-base hover:text-gray-900 transition-all duration-300 font-montserrat font-medium flex items-center gap-2 group/link">
                   <Github className="w-4 h-4 text-gray-400 group-hover/link:text-gray-900 transition-colors" />
                   Contribuir en GitHub
                 </a>
@@ -280,7 +280,7 @@ export function DemoContentSpanish({ onOpenWaitlist }: DemoContentSpanishProps) 
           </div>
 
           <div className="flex justify-center mt-12">
-            <AnimatedButton text="Ver en GitHub" href="https://github.com/aceman23/open-website-translator-widget" />
+            <AnimatedButton text="Ver en GitHub" href="https://github.com/aceman23/OpenTranslateAI_OpenSourceWebsiteTranslator_US" />
           </div>
         </div>
 
