@@ -10,7 +10,8 @@ export function OllamaIcon({ size = 32, className = '' }: IconProps) {
       alt="Ollama"
       width={size}
       height={size}
-      className={className}
+      className={`invert ${className}`}
+      style={{ filter: 'invert(1)' }}
     />
   );
 }
@@ -22,7 +23,8 @@ export function OpenAIIcon({ size = 32, className = '' }: IconProps) {
       alt="OpenAI"
       width={size}
       height={size}
-      className={className}
+      className={`invert ${className}`}
+      style={{ filter: 'invert(1)' }}
     />
   );
 }
