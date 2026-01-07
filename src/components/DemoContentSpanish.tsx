@@ -1,6 +1,4 @@
-import { useState } from 'react';
-import { ArrowRight, Shield, Gauge, Zap, Eye, Users, FileText, Check, Github, Circle, Info, Sparkles, Target, Gift, Crown, Globe, TrendingUp, Download } from 'lucide-react';
-import { OllamaIcon, OpenAIIcon, ClaudeIcon, GrokIcon, QwenIcon } from './AIModelIcons';
+import { ArrowRight, Zap, Check, Github, Circle, Info, Sparkles, Crown, Download } from 'lucide-react';
 import { AnimatedButton } from './AnimatedButton';
 
 interface DemoContentSpanishProps {
@@ -8,12 +6,6 @@ interface DemoContentSpanishProps {
 }
 
 export function DemoContentSpanish({ onOpenWaitlist }: DemoContentSpanishProps) {
-  const [openFaqIndex, setOpenFaqIndex] = useState<number | null>(null);
-
-  const toggleFaq = (index: number) => {
-    setOpenFaqIndex(openFaqIndex === index ? null : index);
-  };
-
   return (
     <div id="translatable-content" className="min-h-screen bg-[#F9F9F9] text-gray-900 antialiased overflow-x-hidden flex flex-col scroll-smooth">
       {/* Navbar */}
@@ -143,6 +135,12 @@ export function DemoContentSpanish({ onOpenWaitlist }: DemoContentSpanishProps) 
 
         {/* Free Open-Source Version: Pros & Cons */}
         <div className="py-24">
+          <div className="text-center mb-12">
+            <div className="inline-flex items-center gap-2 rounded-full border border-green-200 bg-green-50 px-4 py-1.5 text-xs font-montserrat font-bold text-green-600">
+              <Github className="w-3.5 h-3.5" />
+              OPEN SOURCE VERSION
+            </div>
+          </div>
           <h2 className="text-4xl md:text-5xl text-center mb-6 tracking-tight text-gray-900 font-montserrat font-semibold">
             Versión Gratuita de Código Abierto: Pros y Contras
           </h2>
@@ -229,6 +227,10 @@ export function DemoContentSpanish({ onOpenWaitlist }: DemoContentSpanishProps) 
         {/* Features (Free Version) */}
         <div id="features" className="py-24">
           <div className="text-center mb-16">
+            <div className="inline-flex items-center gap-2 rounded-full border border-green-200 bg-green-50 px-4 py-1.5 text-xs font-montserrat font-bold text-green-600 mb-6">
+              <Github className="w-3.5 h-3.5" />
+              OPEN SOURCE VERSION
+            </div>
             <h2 className="text-4xl md:text-5xl mb-4 tracking-tight text-gray-900 font-montserrat font-semibold">
               Características de Código Abierto
             </h2>

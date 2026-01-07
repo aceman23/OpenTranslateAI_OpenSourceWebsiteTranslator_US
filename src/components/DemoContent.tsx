@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { ArrowRight, Shield, Gauge, Zap, Eye, Users, FileText, Check, Github, Circle, Info, Sparkles, Target, Gift, Crown, Globe, TrendingUp, Download } from 'lucide-react';
+import { ArrowRight, Shield, Zap, Users, FileText, Check, Github, Circle, Info, Sparkles, Target, Gift, Crown, Download } from 'lucide-react';
 import { OllamaIcon, OpenAIIcon, ClaudeIcon, GrokIcon, QwenIcon } from './AIModelIcons';
 import { AnimatedButton } from './AnimatedButton';
 
@@ -143,6 +143,12 @@ export function DemoContent({ onOpenWaitlist }: DemoContentProps) {
 
         {/* Free Open-Source Version: Pros & Cons */}
         <div className="py-24">
+          <div className="text-center mb-12">
+            <div className="inline-flex items-center gap-2 rounded-full border border-green-200 bg-green-50 px-4 py-1.5 text-xs font-montserrat font-bold text-green-600">
+              <Github className="w-3.5 h-3.5" />
+              OPEN SOURCE VERSION
+            </div>
+          </div>
           <h2 className="text-4xl md:text-5xl text-center mb-6 tracking-tight text-gray-900 font-montserrat font-semibold">
             免费开源版本：优缺点
           </h2>
@@ -229,6 +235,10 @@ export function DemoContent({ onOpenWaitlist }: DemoContentProps) {
         {/* Features (Free Version) */}
         <div id="features" className="py-24">
           <div className="text-center mb-16">
+            <div className="inline-flex items-center gap-2 rounded-full border border-green-200 bg-green-50 px-4 py-1.5 text-xs font-montserrat font-bold text-green-600 mb-6">
+              <Github className="w-3.5 h-3.5" />
+              OPEN SOURCE VERSION
+            </div>
             <h2 className="text-4xl md:text-5xl mb-4 tracking-tight text-gray-900 font-montserrat font-semibold">
               开源功能
             </h2>
