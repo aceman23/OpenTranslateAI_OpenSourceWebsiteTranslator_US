@@ -23,7 +23,7 @@ export function DemoContentSpanish({ onOpenWaitlist }: DemoContentSpanishProps) 
 
           <div className="h-4 w-px bg-gray-200 hidden md:block"></div>
 
-          <a href="#demo" className="group bg-gray-900 text-white text-sm px-5 py-2.5 rounded-full hover:bg-rose-600 hover:shadow-lg hover:shadow-rose-600/30 transition-all duration-300 flex items-center gap-2 font-montserrat font-medium">
+          <a href="#demo" className="group bg-gray-900 text-white text-sm px-5 py-2.5 rounded-full hover:bg-rose-600 hover:shadow-lg hover:shadow-rose-600/30 transition-all duration-300 hidden md:flex items-center gap-2 font-montserrat font-medium">
             Ver Demo
             <ArrowRight className="w-4 h-4 transition-transform group-hover:translate-x-1" />
           </a>
