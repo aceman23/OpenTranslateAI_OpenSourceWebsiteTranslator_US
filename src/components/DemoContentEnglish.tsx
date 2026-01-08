@@ -485,50 +485,50 @@ export function DemoContentEnglish({ onOpenWaitlist }: DemoContentEnglishProps) 
         </div>
 
         {/* Models Marquee */}
-        <div className="w-full py-8 md:py-12 mt-8 overflow-hidden marquee-mask relative group bg-transparent">
+        <div className="w-full py-12 mt-8 overflow-hidden marquee-mask relative group bg-transparent">
           <div className="flex w-[200%] animate-infinite-scroll hover:[animation-play-state:paused]">
-            <div className="flex items-center justify-around w-1/2 gap-8 md:gap-16 px-4 md:px-8">
-              <div className="flex items-center gap-2 md:gap-3 transition-all duration-300 hover:scale-110">
-                <OllamaIcon size={24} className="md:w-8 md:h-8" />
-                <span className="text-sm md:text-lg font-montserrat font-semibold text-gray-700 whitespace-nowrap">Ollama</span>
+            <div className="flex items-center justify-around w-1/2 gap-6 sm:gap-10 md:gap-16 px-4 sm:px-6 md:px-8">
+              <div className="flex items-center gap-2 sm:gap-3 transition-all duration-300 hover:scale-110">
+                <OllamaIcon size={24} className="sm:w-7 sm:h-7 md:w-8 md:h-8" />
+                <span className="text-sm sm:text-base md:text-lg font-montserrat font-semibold text-gray-700 whitespace-nowrap">Ollama</span>
               </div>
-              <div className="flex items-center gap-2 md:gap-3 transition-all duration-300 hover:scale-110">
-                <OpenAIIcon size={24} className="md:w-8 md:h-8" />
-                <span className="text-sm md:text-lg font-montserrat font-semibold text-gray-700 whitespace-nowrap">GPT-4o</span>
+              <div className="flex items-center gap-2 sm:gap-3 transition-all duration-300 hover:scale-110">
+                <OpenAIIcon size={24} className="sm:w-7 sm:h-7 md:w-8 md:h-8" />
+                <span className="text-sm sm:text-base md:text-lg font-montserrat font-semibold text-gray-700 whitespace-nowrap">GPT-4o</span>
               </div>
-              <div className="flex items-center gap-2 md:gap-3 transition-all duration-300 hover:scale-110">
-                <ClaudeIcon size={24} className="md:w-8 md:h-8" />
-                <span className="text-sm md:text-lg font-montserrat font-semibold text-gray-700 whitespace-nowrap">Claude 3.5</span>
+              <div className="flex items-center gap-2 sm:gap-3 transition-all duration-300 hover:scale-110">
+                <ClaudeIcon size={24} className="sm:w-7 sm:h-7 md:w-8 md:h-8" />
+                <span className="text-sm sm:text-base md:text-lg font-montserrat font-semibold text-gray-700 whitespace-nowrap">Claude 3.5</span>
               </div>
-              <div className="flex items-center gap-2 md:gap-3 transition-all duration-300 hover:scale-110">
-                <GrokIcon size={24} className="md:w-8 md:h-8" />
-                <span className="text-sm md:text-lg font-montserrat font-semibold text-gray-700 whitespace-nowrap">Grok</span>
+              <div className="flex items-center gap-2 sm:gap-3 transition-all duration-300 hover:scale-110">
+                <GrokIcon size={24} className="sm:w-7 sm:h-7 md:w-8 md:h-8" />
+                <span className="text-sm sm:text-base md:text-lg font-montserrat font-semibold text-gray-700 whitespace-nowrap">Grok</span>
               </div>
-              <div className="flex items-center gap-2 md:gap-3 transition-all duration-300 hover:scale-110">
-                <QwenIcon size={24} className="md:w-8 md:h-8" />
-                <span className="text-sm md:text-lg font-montserrat font-semibold text-gray-700 whitespace-nowrap">Qwen</span>
+              <div className="flex items-center gap-2 sm:gap-3 transition-all duration-300 hover:scale-110">
+                <QwenIcon size={24} className="sm:w-7 sm:h-7 md:w-8 md:h-8" />
+                <span className="text-sm sm:text-base md:text-lg font-montserrat font-semibold text-gray-700 whitespace-nowrap">Qwen</span>
               </div>
             </div>
-            <div className="flex items-center justify-around w-1/2 gap-8 md:gap-16 px-4 md:px-8">
-              <div className="flex items-center gap-2 md:gap-3 transition-all duration-300 hover:scale-110">
-                <OllamaIcon size={24} className="md:w-8 md:h-8" />
-                <span className="text-sm md:text-lg font-montserrat font-semibold text-gray-700 whitespace-nowrap">Ollama</span>
+            <div className="flex items-center justify-around w-1/2 gap-6 sm:gap-10 md:gap-16 px-4 sm:px-6 md:px-8">
+              <div className="flex items-center gap-2 sm:gap-3 transition-all duration-300 hover:scale-110">
+                <OllamaIcon size={24} className="sm:w-7 sm:h-7 md:w-8 md:h-8" />
+                <span className="text-sm sm:text-base md:text-lg font-montserrat font-semibold text-gray-700 whitespace-nowrap">Ollama</span>
               </div>
-              <div className="flex items-center gap-2 md:gap-3 transition-all duration-300 hover:scale-110">
-                <OpenAIIcon size={24} className="md:w-8 md:h-8" />
-                <span className="text-sm md:text-lg font-montserrat font-semibold text-gray-700 whitespace-nowrap">GPT-4o</span>
+              <div className="flex items-center gap-2 sm:gap-3 transition-all duration-300 hover:scale-110">
+                <OpenAIIcon size={24} className="sm:w-7 sm:h-7 md:w-8 md:h-8" />
+                <span className="text-sm sm:text-base md:text-lg font-montserrat font-semibold text-gray-700 whitespace-nowrap">GPT-4o</span>
               </div>
-              <div className="flex items-center gap-2 md:gap-3 transition-all duration-300 hover:scale-110">
-                <ClaudeIcon size={24} className="md:w-8 md:h-8" />
-                <span className="text-sm md:text-lg font-montserrat font-semibold text-gray-700 whitespace-nowrap">Claude 3.5</span>
+              <div className="flex items-center gap-2 sm:gap-3 transition-all duration-300 hover:scale-110">
+                <ClaudeIcon size={24} className="sm:w-7 sm:h-7 md:w-8 md:h-8" />
+                <span className="text-sm sm:text-base md:text-lg font-montserrat font-semibold text-gray-700 whitespace-nowrap">Claude 3.5</span>
               </div>
-              <div className="flex items-center gap-2 md:gap-3 transition-all duration-300 hover:scale-110">
-                <GrokIcon size={24} className="md:w-8 md:h-8" />
-                <span className="text-sm md:text-lg font-montserrat font-semibold text-gray-700 whitespace-nowrap">Grok</span>
+              <div className="flex items-center gap-2 sm:gap-3 transition-all duration-300 hover:scale-110">
+                <GrokIcon size={24} className="sm:w-7 sm:h-7 md:w-8 md:h-8" />
+                <span className="text-sm sm:text-base md:text-lg font-montserrat font-semibold text-gray-700 whitespace-nowrap">Grok</span>
               </div>
-              <div className="flex items-center gap-2 md:gap-3 transition-all duration-300 hover:scale-110">
-                <QwenIcon size={24} className="md:w-8 md:h-8" />
-                <span className="text-sm md:text-lg font-montserrat font-semibold text-gray-700 whitespace-nowrap">Qwen</span>
+              <div className="flex items-center gap-2 sm:gap-3 transition-all duration-300 hover:scale-110">
+                <QwenIcon size={24} className="sm:w-7 sm:h-7 md:w-8 md:h-8" />
+                <span className="text-sm sm:text-base md:text-lg font-montserrat font-semibold text-gray-700 whitespace-nowrap">Qwen</span>
               </div>
             </div>
           </div>
