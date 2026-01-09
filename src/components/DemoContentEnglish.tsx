@@ -485,7 +485,7 @@ export function DemoContentEnglish({ onOpenWaitlist }: DemoContentEnglishProps) 
         </div>
 
         {/* Models Marquee */}
-        <div className="w-full py-12 mt-8 overflow-hidden marquee-mask relative group bg-transparent">
+        <div className="w-full py-12 mt-8 overflow-hidden marquee-mask relative group bg-transparent z-10">
           <div className="flex w-[200%] animate-infinite-scroll hover:[animation-play-state:paused]">
             <div className="flex items-center justify-between w-1/2 gap-8 md:gap-16 px-8 md:px-12">
               <div className="flex items-center gap-1.5 md:gap-3 transition-all duration-300 hover:scale-110 flex-shrink-0">
