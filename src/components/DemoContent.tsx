@@ -80,59 +80,59 @@ export function DemoContent({ onOpenWaitlist }: DemoContentProps) {
               </div>
             </div>
 
-            <div className="lg:col-span-5 relative h-[500px] lg:h-[600px] w-full animate-slide-in delay-300">
+            <div className="lg:col-span-5 relative h-[500px] lg:h-[600px] w-full animate-slide-in delay-300 flex items-center justify-center">
               <div className="absolute top-10 right-10 w-full h-full bg-orange-100/50 rounded-[2rem] -rotate-3 z-0"></div>
-              <div className="relative h-full w-full bg-gradient-to-br from-orange-50/80 via-white to-rose-50/80 rounded-[2rem] overflow-hidden shadow-2xl border border-orange-100/50 z-10 group/image flex items-center justify-center">
-                <div className="absolute inset-0 bg-[radial-gradient(#f43f5e_1px,transparent_1px)] [background-size:20px_20px] opacity-[0.05]"></div>
+              <div className="relative h-full w-full bg-gradient-to-br from-orange-50/80 via-white to-rose-50/80 rounded-[2rem] overflow-visible shadow-2xl border border-orange-100/50 z-10 group/image flex items-center justify-center">
+                <div className="absolute inset-0 bg-[radial-gradient(#f43f5e_1px,transparent_1px)] [background-size:20px_20px] opacity-[0.05] rounded-[2rem]"></div>
 
-                <div className="absolute top-20 right-10 md:right-16 z-30 animate-fade-up delay-500">
-                  <div className="bg-orange-100/90 backdrop-blur-md p-5 rounded-2xl shadow-xl border border-orange-200/50 rotate-12 hover:rotate-0 transition-transform duration-500 cursor-pointer">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" className="text-orange-600"><path d="m5 8 6 6"></path><path d="m4 14 6-6 2-3"></path><path d="M2 5h12"></path><path d="M7 2h1"></path><path d="m22 22-5-10-5 10"></path><path d="M14 18h6"></path></svg>
+                <div className="absolute top-12 right-8 lg:right-12 z-30 animate-fade-up delay-500">
+                  <div className="bg-orange-100/90 backdrop-blur-md p-4 lg:p-5 rounded-2xl shadow-xl border border-orange-200/50 rotate-12 hover:rotate-0 transition-transform duration-500 cursor-pointer">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" className="text-orange-600"><path d="m5 8 6 6"></path><path d="m4 14 6-6 2-3"></path><path d="M2 5h12"></path><path d="M7 2h1"></path><path d="m22 22-5-10-5 10"></path><path d="M14 18h6"></path></svg>
                   </div>
                 </div>
 
-                <div className="absolute bottom-20 left-10 md:left-16 z-30 animate-fade-up delay-700">
-                  <div className="bg-orange-100/90 backdrop-blur-md p-5 rounded-2xl shadow-xl border border-orange-200/50 -rotate-12 hover:rotate-0 transition-transform duration-500 cursor-pointer">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" className="text-orange-600"><rect width="18" height="11" x="3" y="11" rx="2" ry="2"></rect><path d="M7 11V7a5 5 0 0 1 10 0v4"></path></svg>
+                <div className="absolute bottom-12 left-8 lg:left-12 z-30 animate-fade-up delay-700">
+                  <div className="bg-orange-100/90 backdrop-blur-md p-4 lg:p-5 rounded-2xl shadow-xl border border-orange-200/50 -rotate-12 hover:rotate-0 transition-transform duration-500 cursor-pointer">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" className="text-orange-600"><rect width="18" height="11" x="3" y="11" rx="2" ry="2"></rect><path d="M7 11V7a5 5 0 0 1 10 0v4"></path></svg>
                   </div>
                 </div>
 
-                <div className="relative z-20 w-[85%] max-w-md bg-white rounded-3xl shadow-[0_20px_50px_-12px_rgba(0,0,0,0.1)] border border-gray-100 p-8 transition-transform duration-500 hover:scale-[1.02]">
+                <div className="relative z-20 w-[80%] max-w-[320px] bg-white rounded-3xl shadow-[0_20px_50px_-12px_rgba(0,0,0,0.1)] border border-gray-100 p-6 lg:p-8 transition-transform duration-500 hover:scale-[1.02] my-auto">
                   <div className="flex gap-2 mb-8">
                     <div className="w-3 h-3 rounded-full bg-[#FF5F57]"></div>
                     <div className="w-3 h-3 rounded-full bg-[#FEBC2E]"></div>
                     <div className="w-3 h-3 rounded-full bg-[#28C840]"></div>
                   </div>
 
-                  <div className="space-y-4">
-                    <div className="bg-[#FFF0E6] p-4 rounded-xl flex items-center justify-between group cursor-default hover:bg-[#ffe4d1] transition-colors">
-                      <div className="flex items-center gap-4">
-                        <div className="w-10 h-10 rounded-full bg-white/60 flex items-center justify-center text-orange-500 shadow-sm">
-                          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"><circle cx="12" cy="12" r="10"></circle><line x1="2" x2="22" y1="12" y2="12"></line><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path></svg>
+                  <div className="space-y-3">
+                    <div className="bg-[#FFF0E6] p-3.5 rounded-xl flex items-center justify-between group cursor-default hover:bg-[#ffe4d1] transition-colors">
+                      <div className="flex items-center gap-3 min-w-0 flex-1">
+                        <div className="w-9 h-9 rounded-full bg-white/60 flex items-center justify-center text-orange-500 shadow-sm flex-shrink-0">
+                          <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"><circle cx="12" cy="12" r="10"></circle><line x1="2" x2="22" y1="12" y2="12"></line><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path></svg>
                         </div>
-                        <span className="text-gray-900 font-montserrat font-medium text-lg">你好世界</span>
+                        <span className="text-gray-900 font-montserrat font-medium text-base truncate">你好世界</span>
                       </div>
-                      <span className="text-gray-500 text-xs font-bold tracking-wider opacity-60">中文</span>
+                      <span className="text-gray-500 text-xs font-bold tracking-wider opacity-60 flex-shrink-0 ml-2">中文</span>
                     </div>
 
-                    <div className="bg-[#E6E8FF] p-4 rounded-xl flex items-center justify-between group cursor-default hover:bg-[#dce0ff] transition-colors shadow-sm ring-1 ring-indigo-100/50">
-                      <div className="flex items-center gap-4">
-                        <div className="w-10 h-10 rounded-full bg-white/60 flex items-center justify-center text-indigo-500 shadow-sm">
-                          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"><path d="m5 8 6 6"></path><path d="m4 14 6-6 2-3"></path><path d="M2 5h12"></path><path d="M7 2h1"></path><path d="m22 22-5-10-5 10"></path><path d="M14 18h6"></path></svg>
+                    <div className="bg-[#E6E8FF] p-3.5 rounded-xl flex items-center justify-between group cursor-default hover:bg-[#dce0ff] transition-colors shadow-sm ring-1 ring-indigo-100/50">
+                      <div className="flex items-center gap-3 min-w-0 flex-1">
+                        <div className="w-9 h-9 rounded-full bg-white/60 flex items-center justify-center text-indigo-500 shadow-sm flex-shrink-0">
+                          <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"><path d="m5 8 6 6"></path><path d="m4 14 6-6 2-3"></path><path d="M2 5h12"></path><path d="M7 2h1"></path><path d="m22 22-5-10-5 10"></path><path d="M14 18h6"></path></svg>
                         </div>
-                        <span className="text-gray-900 font-montserrat font-medium text-lg">Hello World</span>
+                        <span className="text-gray-900 font-montserrat font-medium text-base truncate">Hello World</span>
                       </div>
-                      <span className="text-gray-500 text-xs font-bold tracking-wider opacity-60">EN</span>
+                      <span className="text-gray-500 text-xs font-bold tracking-wider opacity-60 flex-shrink-0 ml-2">EN</span>
                     </div>
 
-                    <div className="bg-[#FFF0E6] p-4 rounded-xl flex items-center justify-between group cursor-default hover:bg-[#ffe4d1] transition-colors">
-                      <div className="flex items-center gap-4">
-                        <div className="w-10 h-10 rounded-full bg-white/60 flex items-center justify-center text-orange-500 shadow-sm">
-                          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"><circle cx="12" cy="12" r="10"></circle><line x1="2" x2="22" y1="12" y2="12"></line><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path></svg>
+                    <div className="bg-[#FFF0E6] p-3.5 rounded-xl flex items-center justify-between group cursor-default hover:bg-[#ffe4d1] transition-colors">
+                      <div className="flex items-center gap-3 min-w-0 flex-1">
+                        <div className="w-9 h-9 rounded-full bg-white/60 flex items-center justify-center text-orange-500 shadow-sm flex-shrink-0">
+                          <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"><circle cx="12" cy="12" r="10"></circle><line x1="2" x2="22" y1="12" y2="12"></line><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path></svg>
                         </div>
-                        <span className="text-gray-900 font-montserrat font-medium text-lg">Hola Mundo</span>
+                        <span className="text-gray-900 font-montserrat font-medium text-base truncate">Hola Mundo</span>
                       </div>
-                      <span className="text-gray-500 text-xs font-bold tracking-wider opacity-60">ES</span>
+                      <span className="text-gray-500 text-xs font-bold tracking-wider opacity-60 flex-shrink-0 ml-2">ES</span>
                     </div>
                   </div>
                 </div>
