@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { ArrowRight, Shield, Zap, Users, FileText, Check, Github, Circle, Info, Sparkles, Target, Gift, Crown, Download, Twitter, Linkedin } from 'lucide-react';
+import { ArrowRight, Shield, Zap, Users, FileText, Check, Github, Circle, Info, Sparkles, Target, Gift, Crown, Download, Linkedin } from 'lucide-react';
 import { OllamaIcon, OpenAIIcon, ClaudeIcon, GrokIcon, QwenIcon } from './AIModelIcons';
 import { AnimatedButton } from './AnimatedButton';
 
@@ -32,10 +32,12 @@ export function DemoContent({ onOpenWaitlist }: DemoContentProps) {
           <div className="h-4 w-px bg-gray-200 hidden md:block"></div>
 
           <div className="hidden md:flex items-center gap-3">
-            <a href="https://x.com/OpenTranslateAI" target="_blank" rel="noopener noreferrer" className="text-gray-500 hover:text-rose-600 transition-colors">
-              <Twitter className="w-4 h-4" />
+            <a href="https://x.com/OpenTranslateAI" target="_blank" rel="noopener noreferrer" className="text-gray-900 hover:text-rose-600 transition-colors">
+              <svg className="w-4 h-4" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
+              </svg>
             </a>
-            <a href="https://www.linkedin.com/company/opentranslateai" target="_blank" rel="noopener noreferrer" className="text-gray-500 hover:text-rose-600 transition-colors">
+            <a href="https://www.linkedin.com/company/opentranslateai" target="_blank" rel="noopener noreferrer" className="text-gray-900 hover:text-rose-600 transition-colors">
               <Linkedin className="w-4 h-4" />
             </a>
           </div>
@@ -975,7 +977,9 @@ export function DemoContent({ onOpenWaitlist }: DemoContentProps) {
           <div className="h-px w-full bg-white/10 mb-10 max-w-4xl"></div>
           <div className="flex items-center justify-center gap-4 mb-8">
             <a href="https://x.com/OpenTranslateAI" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-orange-500 transition-colors">
-              <Twitter className="w-5 h-5" />
+              <svg className="w-5 h-5" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
+              </svg>
             </a>
             <a href="https://www.linkedin.com/company/opentranslateai" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-orange-500 transition-colors">
               <Linkedin className="w-5 h-5" />
