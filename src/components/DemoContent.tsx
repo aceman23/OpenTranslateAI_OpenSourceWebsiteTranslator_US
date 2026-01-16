@@ -975,6 +975,7 @@ export function DemoContent({ onOpenWaitlist }: DemoContentProps) {
             </p>
           </div>
           <div className="h-px w-full bg-white/10 mb-10 max-w-4xl"></div>
+          <p className="text-gray-400 text-sm mb-4 font-montserrat text-center">关注我们获取最新更新和支持：</p>
           <div className="flex items-center justify-center gap-4 mb-8">
             <a href="https://x.com/OpenTranslateAI" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-orange-500 transition-colors">
               <svg className="w-5 h-5" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
