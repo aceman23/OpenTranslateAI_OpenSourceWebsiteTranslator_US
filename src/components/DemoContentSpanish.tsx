@@ -1,4 +1,4 @@
-import { ArrowRight, Zap, Check, Github, Circle, Info, Sparkles, Crown, Download } from 'lucide-react';
+import { ArrowRight, Zap, Check, Github, Circle, Info, Sparkles, Crown, Download, Twitter, Linkedin } from 'lucide-react';
 import { AnimatedButton } from './AnimatedButton';
 
 interface DemoContentSpanishProps {
@@ -22,6 +22,15 @@ export function DemoContentSpanish({ onOpenWaitlist }: DemoContentSpanishProps) 
           </div>
 
           <div className="h-4 w-px bg-gray-200 hidden md:block"></div>
+
+          <div className="hidden md:flex items-center gap-3">
+            <a href="https://x.com/OpenTranslateAI" target="_blank" rel="noopener noreferrer" className="text-gray-500 hover:text-rose-600 transition-colors">
+              <Twitter className="w-4 h-4" />
+            </a>
+            <a href="https://www.linkedin.com/company/opentranslateai" target="_blank" rel="noopener noreferrer" className="text-gray-500 hover:text-rose-600 transition-colors">
+              <Linkedin className="w-4 h-4" />
+            </a>
+          </div>
 
           <a href="#demo" className="group bg-gray-900 text-white text-sm px-5 py-2.5 rounded-full hover:bg-rose-600 hover:shadow-lg hover:shadow-rose-600/30 transition-all duration-300 hidden md:flex items-center gap-2 font-montserrat font-medium">
             Ver Demo
@@ -410,6 +419,14 @@ export function DemoContentSpanish({ onOpenWaitlist }: DemoContentSpanishProps) 
             </p>
           </div>
           <div className="h-px w-full bg-white/10 mb-10 max-w-4xl"></div>
+          <div className="flex items-center justify-center gap-4 mb-8">
+            <a href="https://x.com/OpenTranslateAI" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-orange-500 transition-colors">
+              <Twitter className="w-5 h-5" />
+            </a>
+            <a href="https://www.linkedin.com/company/opentranslateai" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-orange-500 transition-colors">
+              <Linkedin className="w-5 h-5" />
+            </a>
+          </div>
           <div className="flex flex-wrap justify-center gap-6 mb-6">
             <a href="/privacy-policy" className="text-gray-400 hover:text-orange-500 text-sm font-montserrat font-medium transition-colors">
               Política de Privacidad
